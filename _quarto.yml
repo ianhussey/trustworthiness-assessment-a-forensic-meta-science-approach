@@ -5,11 +5,14 @@ project:
 
 book:
   title: "Trustworthiness Assessment"
-  subtitle: "A forensic meta-science approach"
+  subtitle: "Using Forensic Meta-Science"
   author:
     - name: Ian Hussey
       orcid: 0000-0001-8906-7559
       email: ian.hussey@unibe.ch
+    - name: Malte Elson
+      orcid: 0000-0001-7806-9583
+      email: malte.elson@unibe.ch
   date: today
   chapters:
     - index.qmd

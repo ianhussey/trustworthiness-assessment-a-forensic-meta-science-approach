@@ -3,7 +3,7 @@ https://quartopub.com/
   Terminal:
 
 ````
-cd ~/git/improving-your-statistical-inferences-through-monte-carlo-simulations
+cd ~/git/trustworthiness-assessment-a-forensic-meta-science-approach
 quarto publish quarto-pub
 ````
 
