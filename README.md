@@ -1,3 +1,3 @@
-# Improving your statistical inferences through Monte Carlo simulation studies
+# Trustworthiness Assessment: A forensic meta-science approach
 
-eBook here: https://ianhussey.quarto.pub/improving-your-statistical-inferences-through-monte-carlo-simulations
+eBook here: (add URL) 
