@@ -1,0 +1,25 @@
+# Effect size methods <span class="badge badge-draft1">✎ Very rough draft</span>
+
+```{r}
+#| include: false
+if(file.exists("../_setup.R")){source("../_setup.R")}
+```
+
+## Refresher on effect size calculation
+
+- Calculation of Cohen's *d*, *r*, etc.
+
+## Distributions of effect sizes
+
+- Distributions of *d*, *r*, partial eta-squared, etc.
+  - For different types of phenomena/tests (e.g., interventions vs manipulation checks)
+  - For different fields
+  - Avoiding ever saying "domain knowledge"
+
+## Maximum positive controls and intuition benchmarks
+
+- Using known effects as anchors for plausibility assessment
+
+## Common errors
+
+- The Standard Error error (reporting SE instead of SD, or vice versa)

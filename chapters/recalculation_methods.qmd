@@ -1,0 +1,31 @@
+# Recalculation methods <span class="badge badge-draft1">✎ Very rough draft</span>
+
+```{r}
+#| include: false
+if(file.exists("../_setup.R")){source("../_setup.R")}
+```
+
+## Recalculating *p*-values
+
+- From test statistics: statcheck + its false positives
+- From summary statistics; accounting for rounding
+
+## Recalculating effect sizes
+
+- Cohen's *d* and partial eta-squared
+- Not just for recalculating already reported effect sizes to check consistency, but also calculating ones not reported to check plausibility
+- Standardized + SDs to unstandardized, with plausibility of both
+
+## Confidence intervals and bounds
+
+- Recalculating confidence intervals for all the above
+
+## Recalculation under partial information
+
+- Bounds etc., e.g., within-subjects *t*-test
+
+## Other recalculations
+
+- Beta and SE
+- SEM degrees of freedom
+- Running regressions from correlation tables

@@ -1,0 +1,28 @@
+# Bounds methods <span class="badge badge-draft1">✎ Very rough draft</span>
+
+```{r}
+#| include: false
+if(file.exists("../_setup.R")){source("../_setup.R")}
+```
+
+## Means bounds and SD bounds
+
+- TIDES + power + false positives
+- Plausibility as well as possibility
+
+## CI bounds vs. estimates
+
+- Estimate in CIs
+- Harder test: estimate in middle of CIs. Bounds of the mean given the CIs, i.e., is it in the bounds that define the middle given rounding
+
+## Mean inside range
+
+- Is the reported mean inside the possible range of the measure?
+
+## Metric bounds
+
+- E.g., correlations must be in [-1, 1]
+
+## Correlation matrix positive definiteness
+
+- Checking whether reported correlation tables are positive definite

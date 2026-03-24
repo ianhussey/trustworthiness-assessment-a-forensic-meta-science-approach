@@ -1,0 +1,50 @@
+# Scope and need <span class="badge badge-draft1">✎ Very rough draft</span>
+
+```{r}
+#| include: false
+if(file.exists("../_setup.R")){source("../_setup.R")}
+```
+
+## Scope
+
+- How to evaluate trustworthiness based on the article
+- Not how to evaluate the trustworthiness of the data set or the code
+- Usually not assuming access to the actual methods/procedure/devices themselves
+- Not how to evaluate trustworthiness based on relationships between article, code, and data
+- Prereg vs. article comparisons?
+- Excluding some general methods like image forensics, which don't apply to psychology or health RCTs (see intended audience)
+
+### Trustworthiness vs. credibility
+
+- Focus is limited to trustworthiness assessment, not credibility
+- "This study provides biased or partial answers to the question" - credibility, evidence strength
+- "This study cannot answer the question it claims to" - middle ground, where written conclusions cannot be trusted even if the methods and numerical results can be. Misalignment related, and therefore maybe a form of untrustworthiness?
+- "There is reason to believe this study did not occur as described or its results cannot really be as described" - untrustworthiness
+
+### Nomenclature
+
+- Error; trustworthiness vs credibility; hierarchy and meaning for purposes of book should be clarified, without getting into definition wars
+- Compare and contrast with the Four Validities
+
+## Need for this book
+
+- The industry trusted to produce truth has very few quality assurance mechanisms
+- Need for parallel systems of verification. Operationalisation of the mantra that science is self-correcting, but only when we correct it
+- Useful prior steps to replication
+
+### Simulation studies
+
+- Simulation study on over-representation of untrustworthy articles in highly cited ones
+  - Untrustworthy research crowds out trustworthy research
+- Simulation study on data tampering
+  - The trustworthiness-credibility continuum; deemphasising fraud and thinking about negligence/recklessness/fraud
+  - Estimating the prevalence of errors
+
+### Purpose
+
+- Normalisation: in terms of us not being outsiders or weirdos, and in terms of these assessments being viable scientific projects with potentially publishable outputs
+- Democratisation
+
+### Intended audience
+
+- The INSPECT-SR extended universe: health research synthesists, psychologists, and related fields who are doing within-article assessments

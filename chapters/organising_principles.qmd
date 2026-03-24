@@ -1,0 +1,38 @@
+# Organising principles <span class="badge badge-draft1">✎ Very rough draft</span>
+
+```{r}
+#| include: false
+if(file.exists("../_setup.R")){source("../_setup.R")}
+```
+
+## Organising heuristic
+
+- Judgements and conclusions from forensic methods can be organised around three key concepts
+
+## Possibility
+
+- Can the reported results actually be as described?
+- Example: GRIM test — are the reported means possible given the sample size and measurement scale?
+
+## Plausibility
+
+- Are the reported results plausible, even if technically possible?
+- Example: Weird distributions under supposed randomisation at baseline
+- Example: *p*-values from multiple studies in a paper
+
+## Misalignment
+
+- Do the different parts of the article align with each other?
+
+### Measure-construct misalignment
+
+- Does the measure actually capture the construct it claims to?
+
+### Test-inference misalignment
+
+- Does the statistical test support the inference being drawn?
+
+### Claim misalignment
+
+- Do the claims in the article match what the methods and results can actually support?
+- Methods related? Design can't tell you that.

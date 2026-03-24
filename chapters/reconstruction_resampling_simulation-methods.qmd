@@ -1,0 +1,25 @@
+# Reconstruction, resampling, and simulation methods <span class="badge badge-draft1">✎ Very rough draft</span>
+
+```{r}
+#| include: false
+if(file.exists("../_setup.R")){source("../_setup.R")}
+```
+
+## SPRITE
+
+- Sample Parameter Reconstruction via Iterative Techniques
+
+## CLOSURE and Horn's metric
+
+- CLOSURE method
+- Horn's metric
+
+## Simulation and bootstrapping
+
+- Simulation/bootstrapping: how likely given values are given a much larger, more trustworthy sample
+- Resampling results from data to examine plausibility
+- Using within-meta meta-analysis of SDs from the same outcome to examine differences between each sample and the meta-SD
+
+### Caveats
+
+- Although this relies on prior data and the current study may have different selection effects or constraints, the other side of this coin is worth considering
