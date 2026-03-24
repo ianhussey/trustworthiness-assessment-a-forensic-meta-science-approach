@@ -1,0 +1,61 @@
+# Theory specification methods <span class="badge badge-draft1">✎ Very rough draft</span>
+
+```{r}
+#| include: false
+if(file.exists("../_setup.R")){source("../_setup.R")}
+```
+
+## Building a discrimination repertoire
+
+- Learning to make up tacts will help you spot it occurring elsewhere, give you a discrimination and tacting repertoire to point it out yourself
+- See: Chambers book, Neuroskeptic 9 circles of hell
+
+## Can you discriminate their hypothesis, RQ, and goals?
+
+- Description, prediction, influence — or a mushy none-of-the-above?
+
+## Bullshit
+
+- Identifying claims that are not even attempting to be truthful
+
+## Goals
+
+- Description, prediction, influence
+- Explananda vs explanantia, circular reasoning
+
+## Subjunctive vs. indicative theory
+
+### Would It Be Tight
+
+- Burden of proof: what evidence do the authors provide that their theory would not merely be tight?
+
+### In a world fallacy
+
+- Theories that only work under unstated ideal conditions
+
+## Logical arguments
+
+- Sound and valid arguments
+- Failure to consider alternative explanations
+- Affirmation of the consequent
+- Auxiliary hypotheses
+
+## Motte and Bailey arguments
+
+- Strategic retreat to defensible positions when stronger claims are challenged
+
+## (Strategic) ambiguity
+
+- General claims require generalised effects
+
+## Not even wrong claims
+
+- What is your estimand, counterfactuals
+
+## Lego science
+
+- Mechanistic assembly of findings without theoretical coherence
+
+## Ignorance systems
+
+- Research areas sustained by not asking certain questions

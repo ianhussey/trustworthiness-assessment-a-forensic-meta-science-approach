@@ -1,0 +1,17 @@
+# Granularity methods <span class="badge badge-draft1">✎ Very rough draft</span>
+
+```{r}
+#| include: false
+if(file.exists("../_setup.R")){source("../_setup.R")}
+```
+
+## GRIM and MER
+
+- GRIM (Granularity-Related Inconsistency of Means) test
+- MER (Mean Equality Rounding) test
+- Power considerations
+- False positive rates
+
+## GRIM-U
+
+- Extensions and variants of the GRIM test

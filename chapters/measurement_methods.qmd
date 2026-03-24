@@ -1,0 +1,36 @@
+# Measurement methods <span class="badge badge-draft1">✎ Very rough draft</span>
+
+```{r}
+#| include: false
+if(file.exists("../_setup.R")){source("../_setup.R")}
+```
+
+## Jingle and jangle fallacies
+
+- Same name, different constructs (jingle)
+- Different names, same construct (jangle)
+
+## Redundancy
+
+- Bainbridge's work on measurement redundancy
+
+## Ad hoc measure rate
+
+- Prevalence of ad hoc measures and implications for trustworthiness
+
+## Disattenuated associations
+
+- Correcting for measurement error; implications when not done
+
+## Reliability as a prerequisite to replicability
+
+- Reliability "paradox"
+
+## Pseudo effects
+
+- Effects that arise from measurement artifacts rather than real phenomena
+
+## Mode alignment
+
+- Especially self-reported behavior
+- Does the mode of measurement match the construct being assessed?

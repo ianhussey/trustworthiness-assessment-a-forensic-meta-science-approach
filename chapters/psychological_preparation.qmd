@@ -1,0 +1,52 @@
+# Psychological preparation <span class="badge badge-draft1">✎ Very rough draft</span>
+
+```{r}
+#| include: false
+if(file.exists("../_setup.R")){source("../_setup.R")}
+```
+
+## Be willing to look
+
+- "A few outsiders and weirdos saw the giant lie at the heart of the economy by doing something the others never thought to do: They looked."
+- Be willing to consider that fraud-like behavior occurs
+
+## Do the numbers matter
+
+- As a premise for checking
+
+## Not rewarding incoherence
+
+- Not rewarding motte and baileys / evaluating articles based on their strongest claims
+- Authors should not be rewarded for publishing a paper saying "1+1=3" as long as they have a footnote saying "jk lmao"; the footnote doesn't insulate you from critique, especially if it's being cited for the claim and not the footnote
+
+## Think stupider
+
+- Sometimes the simplest explanation is the right one
+
+## Repeated and overlooked information
+
+- Trustworthiness assessment relies on information that is repeated or overlooked
+
+## Boring, complicated, and consequential
+
+- The worst trustworthiness issues occur at the intersection of what is boring, complicated, and consequential
+
+## Is it just me?
+
+- Dealing with uncertainty about whether an issue is real
+
+## Avoiding playing detective
+
+- The burden of proof is on the original authors to substantiate their claims; trustworthiness assessment only has to explain the issue, not account for it
+- You don't have to unfuck it
+
+## Who cares about intent
+
+- Negligence < recklessness < intent
+- That's not useful but it's also usually not your role. Trustworthiness assessment of research is a separate (although sometimes prior-) step from research integrity assessments done e.g., by universities that determine guilt etc.
+- Trustworthiness assessment is analogous to forensic accounting or forensic lab work; not the courts that then determine whether fraud occurred or not
+
+## Untrustworthiness as an individual differences factor
+
+- Emphasis on avoiding witch hunts risks ignoring sensible implications of seeing untrustworthy research as a human factors problem that are nested in individuals, research groups, practices, etc.
+- Systematic patterns matter

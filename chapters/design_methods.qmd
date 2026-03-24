@@ -1,0 +1,26 @@
+# Design methods <span class="badge badge-draft1">✎ Very rough draft</span>
+
+```{r}
+#| include: false
+if(file.exists("../_setup.R")){source("../_setup.R")}
+```
+
+## Recruitment rates
+
+- Plausibility of reported recruitment rates
+
+## Attrition rates
+
+- Plausibility of reported attrition/dropout rates
+
+## Randomisation methods
+
+### Differences at baseline
+
+- Carlisle method
+- Baseline balance checks and variants
+
+### Randomisation plausibility
+
+- E.g., claimed to randomise students to groups for an intervention, but it would have to be at the level of classrooms or schools
+- Binomial/multinomial distribution checks: only useful for testing weirdly unbalanced assignment, not too-perfectly balanced, as it's technically the most probable outcome
