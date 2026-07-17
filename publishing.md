@@ -3,14 +3,14 @@ https://quartopub.com/
   Terminal:
 
 ````
-cd ~/git/trustworthiness-assessment-a-forensic-meta-science-approach
-quarto publish quarto-pub
+cd ~/git/trustworthiness-assessment-and-forensic-meta-science
+quarto publish gh-pages
 ````
 
 or
 
 ```
-quarto publish quarto-pub --no-render
+quarto publish gh-pages --no-render
 ```
 
 
