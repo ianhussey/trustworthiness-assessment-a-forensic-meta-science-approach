@@ -1,3 +1,3 @@
-# Trustworthiness Assessment: A forensic meta-science approach
+# Trustworthiness Assessment and forensic meta-science
 
-eBook here: https://ianhussey.quarto.pub/trustworthiness-assessment/
+eBook here: https://trustworthyresear.ch 

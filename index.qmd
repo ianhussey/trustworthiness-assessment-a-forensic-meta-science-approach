@@ -1,5 +1,7 @@
 ## Introduction {.unnumbered}
 
+This is the skeleton of a book we are slowly writing. For the moment, you should not expect any meaningful content here.
+
 This [Open Source](license.qmd) eBook provides materials for the semester-long Master's seminar course "Estimating the Credibility of Past Research" that Ian delivers at the University of Bern's Institute of Psychology.
 
 This book is split into four parts:
@@ -21,8 +23,8 @@ You can also copy and paste the code for any chapter directly from the website. 
 
 There are many excellent Open Source resources to learn simulation studies in R and {tidyverse}. Readers are encouraged to seek them out to support the materials already provided in this book. I can particularly recommend the following ones:
 
--   https://trustworthy.scientific.claims/
--   Heathers, J. (2025) An Introduction To Forensic Metascience https://jamesheathers.curve.space/
+-   [Forensic Meta-Science: A hub for open-source forensic meta-science methods for assessing the trustworthiness of scientific research. Discover available guides and tools, or contribute to development.](https://trustworthy.scientific.claims/) 
+-   Heathers, J. (2025) An Introduction To Forensic Metascience [eBook](https://jamesheathers.curve.space/)
 
 ## Contributing
 
