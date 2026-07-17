@@ -9,7 +9,7 @@ This book is split into four parts:
 1. **Concepts**. 
 2. **Methods**. 
 3. **Organising**.
-4. **Exercises**.
+4. **Developing and validating forensic methods**.
 
 ## How to use this book
 

@@ -1,0 +1,13 @@
+# Validating meta-science methods using simulated data <span class="badge badge-draft1">✎ Very rough draft</span>
+
+```{r}
+#| include: false
+if(file.exists("../_setup.R")){source("../_setup.R")}
+```
+
+
+This chapter will explain, with worked examples and R/tidyverse/purrr code, how to validate implementations of methods against simulated data. It differentiates between exhaustive grid sweeps and probabilistic Monte Carlo simulations.
+
+This form of validation is essential to understanding whether a method works as expected under idea conditions (i.e., assuming no text extraction, parsing, etc issues; just perfect inputs), in terms of false positives, false negatives, coverage, bias, etc. 
+
+

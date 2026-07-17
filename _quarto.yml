@@ -1,6 +1,7 @@
 project:
   type: book
   resources:
+    - CNAME
     - "!slides/"
 
 book:
@@ -43,16 +44,15 @@ book:
         - exercises/inspect_sr.qmd
         - exercises/organising_critique.qmd # not playing detective? or earlier?
         - exercises/reflexive_critique.qmd # not playing detective? or earlier?
+        
+    - part: "Part IV: Developing and validating methods"
+      chapters:
+        - chapters/forensic_methods_require_validation.qmd
+        - chapters/validation_using_simulated_data.qmd
 
     # - part: "Exercises"
     #   chapters:
     #     # the worst article ever written
-    #     - exercises/1_required_skills_exercises.qmd
-    #     - exercises/3_writing_functions_exercises.qmd
-    #     - exercises/4_data_generating_process_functions_exercises.qmd
-    #     - exercises/6_analysis_functions_exercises.qmd 
-    #     - exercises/7_creating_simulation_experiments_exercises.qmd 
-    #     - exercises/8_mapping_exercises.qmd 
         
     - part: "Appendices"
       chapters:

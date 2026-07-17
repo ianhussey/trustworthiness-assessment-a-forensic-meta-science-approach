@@ -1,0 +1,69 @@
+# Forensic meta-science methods require validation <span class="badge badge-draft1">✎ Very rough draft</span>
+
+```{r}
+#| include: false
+if(file.exists("../_setup.R")){source("../_setup.R")}
+```
+
+
+> "No one’s going to care about a method that doesn’t actually work. That’s why new statistical techniques are never published without some kind of demonstration of their superiority … does it give answers that actually make sense?” (Mandl et al., 2026)
+
+Many forensic meta-science methods have been developed by non methodologists. This is probably not accidental: maybe it required some outside thinkers to develop the agonizingly simple math that GRIM is based on.
+
+But, now that these methods have been conceived of, they need to be validated. There is an asymmetric reputational risk here: if we use these methods to determine that other research is untrustworthy, and it is in fact our methods that are untrustworthy, we are going to look quite silly. This is where the (quantitative) forensic meta-science research community is currently falling behind, and which work in our research group tries to improve. 
+
+At the same time, traditional methods validation in the sense of a simulation study under ideal conditions is insufficient here. Trustworthiness assessments are increasingly likely to be conducted by *users* of forensic meta-science methods rather than expert developers of these methods. As such, implementations of the methods need to be usable, they need to have UIs that guide users towards making sensible choices and away from non-sensible ones, and they need to have clearly specified interpretations of results and reporting guidelines, etc. We therefore conceptualise validation to be broader, along the following candidate dimensions.
+
+## Proposed standard
+
+This rubric defines actionable roadmaps for specification, validation, improvement, and the assessment of readiness (rather than being merely aspirational). 
+
+**Properties**
+
+1. Formal specification of method
+  - Logic, math, etc.
+  - Scope of inference
+  - Assumptions
+  - Limitations
+  - Use and failure cases
+2. Implementation
+  - In a free and open-source software library written in an open-source programming language, such as R or Python. In R library or equivalent.
+  - Code as primary output. Treat the implementation as the artefact under review. Open code, unit tests, reproducible fixtures, ;continuous integration. 
+  - This often involves additional considerations beyond the abstract method to handle real world use cases. Common considerations include data extraction, which is a whole realm of tasks in itself.
+  - Note that separation of library and tool is important for validation.
+3. Validation against simulated data
+  - e.g., Monte Carlo for stochastic methods, parameter sweep for deterministic methods, etc., to assess whether the method functions as expected over a wide range of known inputs. ADEMP reporting.
+  - Using common performance metrics from research methods, such as sensitivity, specificity, empirical rejection rate (calibration under the null, ability and power to detect issues of what size), bias, coverage, etc.
+  - Robustness to nuisance parameters (e.g., rounded inputs and different rounding or truncation conventions, reporting standards, typos in inputs, number of items).
+4. Validation against human-coded data
+  - To assess whether the method functions as expected over a wide range of realistic inputs. This is useful for surfacing issues to do with extraction/parsing, edge cases, etc.
+  - Consideration of gold vs. reference standards, reporting of inter-rater reliability between human-human, human-tool, or human-ai coders, etc.
+  - This provides information on generalisability, validation within specific domains (e.g., reporting standards may differ between psychology and medicine; pdf formatting may differ between journals or publishers).
+5. Large scale application
+  - Substantive conclusions (e.g., re prevalence, severity etc) from applying the method to a large amount of real world data. Often (initially) using the same data used for validation against human coding, as part of the same process.
+6. Adversarial robustness / gameability.
+  - Once a method is known, can it be evaded (e.g., reporting choices that defeat GRIM)? What vectors of gamability might exist?
+
+**Usage**
+
+7. Tool
+  - Implementation of the library in a UI tool (eg Shiny app), AI skill, etc. to increase usability/scalability.
+  - Audit trail: does the tool produce an auditable trail of inputs, outputs, versions of method/tool applied, etc.
+8. Reporting standards
+  - Instructions on how to interpret and report results from the method/tool.
+9. Training materials
+  - Materials that train and ideally assess whether users can correctly use and report the method/tool, including its assumptions, limitations, use- and failure-cases etc.
+10. Usability
+  - Evidence that users find the library/tool to be adequately usable; and that misuse cases are assessed, detected and mitigated via human factors research.
+
+**Ecosystem**
+
+11. Comparison
+  - When multiple implementations of a given or related method are available, head-to-head comparisons are informative. This can be along many of the above dimensions, from validation to usability to training materials, to a general assessment of use-cases.
+  - Versioning, maintenance & deprecation.
+  - Versioning of methods/tools.
+  - Last time of validation. Tools rot (PDF formats change, R deps break). Need for ongoing validation, not one-shot.
+12. Readiness
+  - TBD: Some sort of maturity-level or evidence-readiness scheme that integrates the above.
+
+
