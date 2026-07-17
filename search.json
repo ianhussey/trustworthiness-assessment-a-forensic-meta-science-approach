@@ -1,0 +1,1262 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Trustworthiness Assessment",
+    "section": "",
+    "text": "Introduction\nThis is the skeleton of a book we are slowly writing. For the moment, you should not expect any meaningful content here.\nThis Open Source eBook provides materials for the semester-long Master’s seminar course “Estimating the Credibility of Past Research” that Ian delivers at the University of Bern’s Institute of Psychology.\nThis book is split into four parts:",
+    "crumbs": [
+      "Introduction"
+    ]
+  },
+  {
+    "objectID": "index.html#introduction",
+    "href": "index.html#introduction",
+    "title": "Trustworthiness Assessment",
+    "section": "",
+    "text": "Concepts.\nMethods.\nOrganising.\nExercises.",
+    "crumbs": [
+      "Introduction"
+    ]
+  },
+  {
+    "objectID": "index.html#how-to-use-this-book",
+    "href": "index.html#how-to-use-this-book",
+    "title": "Trustworthiness Assessment",
+    "section": "How to use this book",
+    "text": "How to use this book\nThis book is made up of individual Quarto (.qmd) files. Many of the exercises are easiest to complete in your own local copy of these .qmd files.\nWe suggest that you download a .zip of the contents of this book’s code and data from GitHub to run the code locally, complete the exercises, etc.\nYou can also copy and paste the code for any chapter directly from the website. Click the “&lt;/&gt; Code” button on the top right of each page to see the full .qmd file’s code. You can copy and paste this into a .qmd file. However, it’s probably easier to download all the .qmd files and data as mentioned above.",
+    "crumbs": [
+      "Introduction"
+    ]
+  },
+  {
+    "objectID": "index.html#other-learning-resources",
+    "href": "index.html#other-learning-resources",
+    "title": "Trustworthiness Assessment",
+    "section": "Other learning resources",
+    "text": "Other learning resources\nThere are many excellent Open Source resources to learn simulation studies in R and {tidyverse}. Readers are encouraged to seek them out to support the materials already provided in this book. I can particularly recommend the following ones:\n\nForensic Meta-Science: A hub for open-source forensic meta-science methods for assessing the trustworthiness of scientific research. Discover available guides and tools, or contribute to development.\nHeathers, J. (2025) An Introduction To Forensic Metascience eBook",
+    "crumbs": [
+      "Introduction"
+    ]
+  },
+  {
+    "objectID": "index.html#contributing",
+    "href": "index.html#contributing",
+    "title": "Trustworthiness Assessment",
+    "section": "Contributing",
+    "text": "Contributing\nIf you are interested in contributing to or adapting this eBook, all code and data are available on GitHub.",
+    "crumbs": [
+      "Introduction"
+    ]
+  },
+  {
+    "objectID": "chapters/scope_and_need.html",
+    "href": "chapters/scope_and_need.html",
+    "title": "1  Scope and need ✎ Very rough draft",
+    "section": "",
+    "text": "1.1 Scope",
+    "crumbs": [
+      "Part I: Concepts",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Scope and need <span class=\"badge badge-draft1\">✎ Very rough draft</span></span>"
+    ]
+  },
+  {
+    "objectID": "chapters/scope_and_need.html#scope",
+    "href": "chapters/scope_and_need.html#scope",
+    "title": "1  Scope and need ✎ Very rough draft",
+    "section": "",
+    "text": "How to evaluate trustworthiness based on the article\nNot how to evaluate the trustworthiness of the data set or the code\nUsually not assuming access to the actual methods/procedure/devices themselves\nNot how to evaluate trustworthiness based on relationships between article, code, and data\nPrereg vs. article comparisons?\nExcluding some general methods like image forensics, which don’t apply to psychology or health RCTs (see intended audience)\n\n\n1.1.1 Trustworthiness vs. credibility\n\nFocus is limited to trustworthiness assessment, not credibility\n“This study provides biased or partial answers to the question” - credibility, evidence strength\n“This study cannot answer the question it claims to” - middle ground, where written conclusions cannot be trusted even if the methods and numerical results can be. Misalignment related, and therefore maybe a form of untrustworthiness?\n“There is reason to believe this study did not occur as described or its results cannot really be as described” - untrustworthiness\n\n\n\n1.1.2 Nomenclature\n\nError; trustworthiness vs credibility; hierarchy and meaning for purposes of book should be clarified, without getting into definition wars\nCompare and contrast with the Four Validities",
+    "crumbs": [
+      "Part I: Concepts",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Scope and need <span class=\"badge badge-draft1\">✎ Very rough draft</span></span>"
+    ]
+  },
+  {
+    "objectID": "chapters/scope_and_need.html#need-for-this-book",
+    "href": "chapters/scope_and_need.html#need-for-this-book",
+    "title": "1  Scope and need ✎ Very rough draft",
+    "section": "1.2 Need for this book",
+    "text": "1.2 Need for this book\n\nThe industry trusted to produce truth has very few quality assurance mechanisms\nNeed for parallel systems of verification. Operationalisation of the mantra that science is self-correcting, but only when we correct it\nUseful prior steps to replication\n\n\n1.2.1 Simulation studies\n\nSimulation study on over-representation of untrustworthy articles in highly cited ones\n\nUntrustworthy research crowds out trustworthy research\n\nSimulation study on data tampering\n\nThe trustworthiness-credibility continuum; deemphasising fraud and thinking about negligence/recklessness/fraud\nEstimating the prevalence of errors\n\n\n\n\n1.2.2 Purpose\n\nNormalisation: in terms of us not being outsiders or weirdos, and in terms of these assessments being viable scientific projects with potentially publishable outputs\nDemocratisation\n\n\n\n1.2.3 Intended audience\n\nThe INSPECT-SR extended universe: health research synthesists, psychologists, and related fields who are doing within-article assessments",
+    "crumbs": [
+      "Part I: Concepts",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Scope and need <span class=\"badge badge-draft1\">✎ Very rough draft</span></span>"
+    ]
+  },
+  {
+    "objectID": "chapters/psychological_preparation.html",
+    "href": "chapters/psychological_preparation.html",
+    "title": "2  Psychological preparation ✎ Very rough draft",
+    "section": "",
+    "text": "2.1 Be willing to look",
+    "crumbs": [
+      "Part I: Concepts",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Psychological preparation <span class=\"badge badge-draft1\">✎ Very rough draft</span></span>"
+    ]
+  },
+  {
+    "objectID": "chapters/psychological_preparation.html#be-willing-to-look",
+    "href": "chapters/psychological_preparation.html#be-willing-to-look",
+    "title": "2  Psychological preparation ✎ Very rough draft",
+    "section": "",
+    "text": "“A few outsiders and weirdos saw the giant lie at the heart of the economy by doing something the others never thought to do: They looked.”\nBe willing to consider that fraud-like behavior occurs",
+    "crumbs": [
+      "Part I: Concepts",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Psychological preparation <span class=\"badge badge-draft1\">✎ Very rough draft</span></span>"
+    ]
+  },
+  {
+    "objectID": "chapters/psychological_preparation.html#do-the-numbers-matter",
+    "href": "chapters/psychological_preparation.html#do-the-numbers-matter",
+    "title": "2  Psychological preparation ✎ Very rough draft",
+    "section": "2.2 Do the numbers matter",
+    "text": "2.2 Do the numbers matter\n\nAs a premise for checking",
+    "crumbs": [
+      "Part I: Concepts",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Psychological preparation <span class=\"badge badge-draft1\">✎ Very rough draft</span></span>"
+    ]
+  },
+  {
+    "objectID": "chapters/psychological_preparation.html#not-rewarding-incoherence",
+    "href": "chapters/psychological_preparation.html#not-rewarding-incoherence",
+    "title": "2  Psychological preparation ✎ Very rough draft",
+    "section": "2.3 Not rewarding incoherence",
+    "text": "2.3 Not rewarding incoherence\n\nNot rewarding motte and baileys / evaluating articles based on their strongest claims\nAuthors should not be rewarded for publishing a paper saying “1+1=3” as long as they have a footnote saying “jk lmao”; the footnote doesn’t insulate you from critique, especially if it’s being cited for the claim and not the footnote",
+    "crumbs": [
+      "Part I: Concepts",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Psychological preparation <span class=\"badge badge-draft1\">✎ Very rough draft</span></span>"
+    ]
+  },
+  {
+    "objectID": "chapters/psychological_preparation.html#think-stupider",
+    "href": "chapters/psychological_preparation.html#think-stupider",
+    "title": "2  Psychological preparation ✎ Very rough draft",
+    "section": "2.4 Think stupider",
+    "text": "2.4 Think stupider\n\nSometimes the simplest explanation is the right one",
+    "crumbs": [
+      "Part I: Concepts",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Psychological preparation <span class=\"badge badge-draft1\">✎ Very rough draft</span></span>"
+    ]
+  },
+  {
+    "objectID": "chapters/psychological_preparation.html#repeated-and-overlooked-information",
+    "href": "chapters/psychological_preparation.html#repeated-and-overlooked-information",
+    "title": "2  Psychological preparation ✎ Very rough draft",
+    "section": "2.5 Repeated and overlooked information",
+    "text": "2.5 Repeated and overlooked information\n\nTrustworthiness assessment relies on information that is repeated or overlooked",
+    "crumbs": [
+      "Part I: Concepts",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Psychological preparation <span class=\"badge badge-draft1\">✎ Very rough draft</span></span>"
+    ]
+  },
+  {
+    "objectID": "chapters/psychological_preparation.html#boring-complicated-and-consequential",
+    "href": "chapters/psychological_preparation.html#boring-complicated-and-consequential",
+    "title": "2  Psychological preparation ✎ Very rough draft",
+    "section": "2.6 Boring, complicated, and consequential",
+    "text": "2.6 Boring, complicated, and consequential\n\nThe worst trustworthiness issues occur at the intersection of what is boring, complicated, and consequential",
+    "crumbs": [
+      "Part I: Concepts",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Psychological preparation <span class=\"badge badge-draft1\">✎ Very rough draft</span></span>"
+    ]
+  },
+  {
+    "objectID": "chapters/psychological_preparation.html#is-it-just-me",
+    "href": "chapters/psychological_preparation.html#is-it-just-me",
+    "title": "2  Psychological preparation ✎ Very rough draft",
+    "section": "2.7 Is it just me?",
+    "text": "2.7 Is it just me?\n\nDealing with uncertainty about whether an issue is real",
+    "crumbs": [
+      "Part I: Concepts",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Psychological preparation <span class=\"badge badge-draft1\">✎ Very rough draft</span></span>"
+    ]
+  },
+  {
+    "objectID": "chapters/psychological_preparation.html#avoiding-playing-detective",
+    "href": "chapters/psychological_preparation.html#avoiding-playing-detective",
+    "title": "2  Psychological preparation ✎ Very rough draft",
+    "section": "2.8 Avoiding playing detective",
+    "text": "2.8 Avoiding playing detective\n\nThe burden of proof is on the original authors to substantiate their claims; trustworthiness assessment only has to explain the issue, not account for it\nYou don’t have to unfuck it",
+    "crumbs": [
+      "Part I: Concepts",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Psychological preparation <span class=\"badge badge-draft1\">✎ Very rough draft</span></span>"
+    ]
+  },
+  {
+    "objectID": "chapters/psychological_preparation.html#who-cares-about-intent",
+    "href": "chapters/psychological_preparation.html#who-cares-about-intent",
+    "title": "2  Psychological preparation ✎ Very rough draft",
+    "section": "2.9 Who cares about intent",
+    "text": "2.9 Who cares about intent\n\nNegligence &lt; recklessness &lt; intent\nThat’s not useful but it’s also usually not your role. Trustworthiness assessment of research is a separate (although sometimes prior-) step from research integrity assessments done e.g., by universities that determine guilt etc.\nTrustworthiness assessment is analogous to forensic accounting or forensic lab work; not the courts that then determine whether fraud occurred or not",
+    "crumbs": [
+      "Part I: Concepts",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Psychological preparation <span class=\"badge badge-draft1\">✎ Very rough draft</span></span>"
+    ]
+  },
+  {
+    "objectID": "chapters/psychological_preparation.html#untrustworthiness-as-an-individual-differences-factor",
+    "href": "chapters/psychological_preparation.html#untrustworthiness-as-an-individual-differences-factor",
+    "title": "2  Psychological preparation ✎ Very rough draft",
+    "section": "2.10 Untrustworthiness as an individual differences factor",
+    "text": "2.10 Untrustworthiness as an individual differences factor\n\nEmphasis on avoiding witch hunts risks ignoring sensible implications of seeing untrustworthy research as a human factors problem that are nested in individuals, research groups, practices, etc.\nSystematic patterns matter",
+    "crumbs": [
+      "Part I: Concepts",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Psychological preparation <span class=\"badge badge-draft1\">✎ Very rough draft</span></span>"
+    ]
+  },
+  {
+    "objectID": "chapters/organising_principles.html",
+    "href": "chapters/organising_principles.html",
+    "title": "3  Organising principles ✎ Very rough draft",
+    "section": "",
+    "text": "3.1 Organising heuristic",
+    "crumbs": [
+      "Part I: Concepts",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Organising principles <span class=\"badge badge-draft1\">✎ Very rough draft</span></span>"
+    ]
+  },
+  {
+    "objectID": "chapters/organising_principles.html#organising-heuristic",
+    "href": "chapters/organising_principles.html#organising-heuristic",
+    "title": "3  Organising principles ✎ Very rough draft",
+    "section": "",
+    "text": "Judgements and conclusions from forensic methods can be organised around three key concepts",
+    "crumbs": [
+      "Part I: Concepts",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Organising principles <span class=\"badge badge-draft1\">✎ Very rough draft</span></span>"
+    ]
+  },
+  {
+    "objectID": "chapters/organising_principles.html#possibility",
+    "href": "chapters/organising_principles.html#possibility",
+    "title": "3  Organising principles ✎ Very rough draft",
+    "section": "3.2 Possibility",
+    "text": "3.2 Possibility\n\nCan the reported results actually be as described?\nExample: GRIM test — are the reported means possible given the sample size and measurement scale?",
+    "crumbs": [
+      "Part I: Concepts",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Organising principles <span class=\"badge badge-draft1\">✎ Very rough draft</span></span>"
+    ]
+  },
+  {
+    "objectID": "chapters/organising_principles.html#plausibility",
+    "href": "chapters/organising_principles.html#plausibility",
+    "title": "3  Organising principles ✎ Very rough draft",
+    "section": "3.3 Plausibility",
+    "text": "3.3 Plausibility\n\nAre the reported results plausible, even if technically possible?\nExample: Weird distributions under supposed randomisation at baseline\nExample: p-values from multiple studies in a paper",
+    "crumbs": [
+      "Part I: Concepts",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Organising principles <span class=\"badge badge-draft1\">✎ Very rough draft</span></span>"
+    ]
+  },
+  {
+    "objectID": "chapters/organising_principles.html#misalignment",
+    "href": "chapters/organising_principles.html#misalignment",
+    "title": "3  Organising principles ✎ Very rough draft",
+    "section": "3.4 Misalignment",
+    "text": "3.4 Misalignment\n\nDo the different parts of the article align with each other?\n\n\n3.4.1 Measure-construct misalignment\n\nDoes the measure actually capture the construct it claims to?\n\n\n\n3.4.2 Test-inference misalignment\n\nDoes the statistical test support the inference being drawn?\n\n\n\n3.4.3 Claim misalignment\n\nDo the claims in the article match what the methods and results can actually support?\nMethods related? Design can’t tell you that.",
+    "crumbs": [
+      "Part I: Concepts",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Organising principles <span class=\"badge badge-draft1\">✎ Very rough draft</span></span>"
+    ]
+  },
+  {
+    "objectID": "chapters/interpretation_methods.html",
+    "href": "chapters/interpretation_methods.html",
+    "title": "4  Interpretation methods ✎ Very rough draft",
+    "section": "",
+    "text": "4.1 Interpretation of p-values",
+    "crumbs": [
+      "Part II: Methods",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Interpretation methods <span class=\"badge badge-draft1\">✎ Very rough draft</span></span>"
+    ]
+  },
+  {
+    "objectID": "chapters/interpretation_methods.html#interpretation-of-p-values",
+    "href": "chapters/interpretation_methods.html#interpretation-of-p-values",
+    "title": "4  Interpretation methods ✎ Very rough draft",
+    "section": "",
+    "text": "Intuitions for p-values\nAlpha, power, diagnosticity refreshers\n\nDistribution of unbiased p-values under null/alternative\n\np-hacking and its impact on p-values and effect sizes\nMethods that aren’t useful for trustworthiness assessment but are good for intuitions: distribution of biased p-values, p-curve, z-curve\nToo good to be true in the context of power vs significance rate\nPeeking and trends towards significance",
+    "crumbs": [
+      "Part II: Methods",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Interpretation methods <span class=\"badge badge-draft1\">✎ Very rough draft</span></span>"
+    ]
+  },
+  {
+    "objectID": "chapters/interpretation_methods.html#misinterpretation-of-p-values",
+    "href": "chapters/interpretation_methods.html#misinterpretation-of-p-values",
+    "title": "4  Interpretation methods ✎ Very rough draft",
+    "section": "4.2 Misinterpretation of p-values",
+    "text": "4.2 Misinterpretation of p-values\n\nNon-significant p-values as evidence for the null\nDifference between significant and non-significant is not itself significant\nSimply claiming differences with non-significant p-values",
+    "crumbs": [
+      "Part II: Methods",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Interpretation methods <span class=\"badge badge-draft1\">✎ Very rough draft</span></span>"
+    ]
+  },
+  {
+    "objectID": "chapters/interpretation_methods.html#misinterpretation-of-specific-tests",
+    "href": "chapters/interpretation_methods.html#misinterpretation-of-specific-tests",
+    "title": "4  Interpretation methods ✎ Very rough draft",
+    "section": "4.3 Misinterpretation of specific tests",
+    "text": "4.3 Misinterpretation of specific tests\n\nAnalysis-claim misalignment in general; most of the below are a specific class of this\n\nAny test that exists can and will be misaligned somewhere\nNature and magnitude of misalignment, e.g., CLPM lends itself to causal interpretation but can’t give it\nGoals confusion gives rise to misalignment: description, prediction, influence\nThe demand for tests is understandable; “Hot Right Now” stats that are poorly understood as a general problem\n\n\n\n4.3.1 Efficacy claims\n\nEfficacy claims from anything other than a post-intervention comparison with a control group (pre-post, two interventions, etc.)\n\n\n\n4.3.2 MANOVA\n\nThe “Protected F-test” logic: the belief that a significant omnibus MANOVA “protects” subsequent univariate ANOVAs from Type I error inflation\n\n\n\n4.3.3 Mediation and PROCESS macro\n\nMediation\nPROCESS macro — “That’s a lot to process”\n\n\n\n4.3.4 CLPM and variants\n\nCross-lagged panel models and causal interpretation limitations\n\n\n\n4.3.5 Bifactor models in SEM\n\nReal-world data rarely perfectly follows proportionality constraints, so the less-restricted bifactor model will statistically outperform the higher-order model in nearly every CFA application, regardless of the “true” structure\nBifactor model is more robust to minor misspecifications because its direct paths to items allow it to “soak up” variance that a more constrained higher-order model cannot\n\n\n\n4.3.6 ANOVA\n\nHidden multiplicity in ANOVA\nLack of power in higher order interactions (problems with both false positives and false negatives)\n\n\n\n4.3.7 Other commonly misused methods\n\nStepwise regression\nPost hoc power analysis\n“Little Jiffy” Factor Analysis (PCA with Varimax & Kaiser Criterion of Eigenvalues &gt; 1; default in SPSS)\nChoosing covariates based on significance or univariate associations\nLatent class growth models (note: very different from latent growth curve models)\nMagnitude-Based Inference\nANCOVA applied to observational data — Lord’s paradox\nPropensity Score Matching\nPartial Least Squares SEM\nStatistical confusion of assumption and inference / affirmation of the consequent in analyses",
+    "crumbs": [
+      "Part II: Methods",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Interpretation methods <span class=\"badge badge-draft1\">✎ Very rough draft</span></span>"
+    ]
+  },
+  {
+    "objectID": "chapters/interpretation_methods.html#easter-egg-research",
+    "href": "chapters/interpretation_methods.html#easter-egg-research",
+    "title": "4  Interpretation methods ✎ Very rough draft",
+    "section": "4.4 Easter egg research",
+    "text": "4.4 Easter egg research\n\nCreating groups via clustering then testing for differences between them\nAssuming differences between groups and then reifying the groups\nK-means or Latent Class Analysis to create groups, followed by t-tests/ANOVA on the same variables to “validate” the groups\nAnalyses that assume the number of clusters and then discover them (e.g., Latent Profile Analysis)",
+    "crumbs": [
+      "Part II: Methods",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Interpretation methods <span class=\"badge badge-draft1\">✎ Very rough draft</span></span>"
+    ]
+  },
+  {
+    "objectID": "chapters/interpretation_methods.html#conditioning-on-post-treatment-effects",
+    "href": "chapters/interpretation_methods.html#conditioning-on-post-treatment-effects",
+    "title": "4  Interpretation methods ✎ Very rough draft",
+    "section": "4.5 Conditioning on post-treatment effects",
+    "text": "4.5 Conditioning on post-treatment effects\n\nCommon cause problems",
+    "crumbs": [
+      "Part II: Methods",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Interpretation methods <span class=\"badge badge-draft1\">✎ Very rough draft</span></span>"
+    ]
+  },
+  {
+    "objectID": "chapters/interpretation_methods.html#causal-claims-implications-and-assumptions",
+    "href": "chapters/interpretation_methods.html#causal-claims-implications-and-assumptions",
+    "title": "4  Interpretation methods ✎ Very rough draft",
+    "section": "4.6 Causal claims, implications, and assumptions",
+    "text": "4.6 Causal claims, implications, and assumptions\n\nCausality tests don’t exist, only causal assumptions\nCausal assumptions do exist and should be clarified\nCausal claims in non-experiments\nCausal claims in experiments that aren’t experiments: pre-post change, follow-up comparisons against LOCF\nThe litmus test of “is this only interesting if it’s causal, yet it’s described as non-causal evidence”",
+    "crumbs": [
+      "Part II: Methods",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Interpretation methods <span class=\"badge badge-draft1\">✎ Very rough draft</span></span>"
+    ]
+  },
+  {
+    "objectID": "chapters/interpretation_methods.html#other-interpretation-issues",
+    "href": "chapters/interpretation_methods.html#other-interpretation-issues",
+    "title": "4  Interpretation methods ✎ Very rough draft",
+    "section": "4.7 Other interpretation issues",
+    "text": "4.7 Other interpretation issues\n\nConfusing IV and DV\nTable 2 fallacy",
+    "crumbs": [
+      "Part II: Methods",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Interpretation methods <span class=\"badge badge-draft1\">✎ Very rough draft</span></span>"
+    ]
+  },
+  {
+    "objectID": "chapters/effect_size_methods.html",
+    "href": "chapters/effect_size_methods.html",
+    "title": "5  Effect size methods ✎ Very rough draft",
+    "section": "",
+    "text": "5.1 Refresher on effect size calculation",
+    "crumbs": [
+      "Part II: Methods",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Effect size methods <span class=\"badge badge-draft1\">✎ Very rough draft</span></span>"
+    ]
+  },
+  {
+    "objectID": "chapters/effect_size_methods.html#refresher-on-effect-size-calculation",
+    "href": "chapters/effect_size_methods.html#refresher-on-effect-size-calculation",
+    "title": "5  Effect size methods ✎ Very rough draft",
+    "section": "",
+    "text": "Calculation of Cohen’s d, r, etc.",
+    "crumbs": [
+      "Part II: Methods",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Effect size methods <span class=\"badge badge-draft1\">✎ Very rough draft</span></span>"
+    ]
+  },
+  {
+    "objectID": "chapters/effect_size_methods.html#distributions-of-effect-sizes",
+    "href": "chapters/effect_size_methods.html#distributions-of-effect-sizes",
+    "title": "5  Effect size methods ✎ Very rough draft",
+    "section": "5.2 Distributions of effect sizes",
+    "text": "5.2 Distributions of effect sizes\n\nDistributions of d, r, partial eta-squared, etc.\n\nFor different types of phenomena/tests (e.g., interventions vs manipulation checks)\nFor different fields\nAvoiding ever saying “domain knowledge”",
+    "crumbs": [
+      "Part II: Methods",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Effect size methods <span class=\"badge badge-draft1\">✎ Very rough draft</span></span>"
+    ]
+  },
+  {
+    "objectID": "chapters/effect_size_methods.html#maximum-positive-controls-and-intuition-benchmarks",
+    "href": "chapters/effect_size_methods.html#maximum-positive-controls-and-intuition-benchmarks",
+    "title": "5  Effect size methods ✎ Very rough draft",
+    "section": "5.3 Maximum positive controls and intuition benchmarks",
+    "text": "5.3 Maximum positive controls and intuition benchmarks\n\nUsing known effects as anchors for plausibility assessment",
+    "crumbs": [
+      "Part II: Methods",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Effect size methods <span class=\"badge badge-draft1\">✎ Very rough draft</span></span>"
+    ]
+  },
+  {
+    "objectID": "chapters/effect_size_methods.html#common-errors",
+    "href": "chapters/effect_size_methods.html#common-errors",
+    "title": "5  Effect size methods ✎ Very rough draft",
+    "section": "5.4 Common errors",
+    "text": "5.4 Common errors\n\nThe Standard Error error (reporting SE instead of SD, or vice versa)",
+    "crumbs": [
+      "Part II: Methods",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Effect size methods <span class=\"badge badge-draft1\">✎ Very rough draft</span></span>"
+    ]
+  },
+  {
+    "objectID": "chapters/repetition/consistency_methods.html",
+    "href": "chapters/repetition/consistency_methods.html",
+    "title": "6  Repetition and consistency methods ✎ Very rough draft",
+    "section": "",
+    "text": "6.1 Internal consistency of summary statistics",
+    "crumbs": [
+      "Part II: Methods",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Repetition and consistency methods <span class=\"badge badge-draft1\">✎ Very rough draft</span></span>"
+    ]
+  },
+  {
+    "objectID": "chapters/repetition/consistency_methods.html#internal-consistency-of-summary-statistics",
+    "href": "chapters/repetition/consistency_methods.html#internal-consistency-of-summary-statistics",
+    "title": "6  Repetition and consistency methods ✎ Very rough draft",
+    "section": "",
+    "text": "Are M/SD/N consistent throughout the article?\nAre M/SD/N consistent between whole sample vs subgroups?",
+    "crumbs": [
+      "Part II: Methods",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Repetition and consistency methods <span class=\"badge badge-draft1\">✎ Very rough draft</span></span>"
+    ]
+  },
+  {
+    "objectID": "chapters/repetition/consistency_methods.html#abstract-vs.-results",
+    "href": "chapters/repetition/consistency_methods.html#abstract-vs.-results",
+    "title": "6  Repetition and consistency methods ✎ Very rough draft",
+    "section": "6.2 Abstract vs. results",
+    "text": "6.2 Abstract vs. results\n\nDoes the result in the abstract match the results section?\nDoes the abstract label the preregistered analysis/primary outcome?",
+    "crumbs": [
+      "Part II: Methods",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Repetition and consistency methods <span class=\"badge badge-draft1\">✎ Very rough draft</span></span>"
+    ]
+  },
+  {
+    "objectID": "chapters/repetition/consistency_methods.html#tables-vs.-text",
+    "href": "chapters/repetition/consistency_methods.html#tables-vs.-text",
+    "title": "6  Repetition and consistency methods ✎ Very rough draft",
+    "section": "6.3 Tables vs. text",
+    "text": "6.3 Tables vs. text\n\nDo the tables match the text?",
+    "crumbs": [
+      "Part II: Methods",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Repetition and consistency methods <span class=\"badge badge-draft1\">✎ Very rough draft</span></span>"
+    ]
+  },
+  {
+    "objectID": "chapters/repetition/consistency_methods.html#introduction-vs.-analysis",
+    "href": "chapters/repetition/consistency_methods.html#introduction-vs.-analysis",
+    "title": "6  Repetition and consistency methods ✎ Very rough draft",
+    "section": "6.4 Introduction vs. analysis",
+    "text": "6.4 Introduction vs. analysis\n\nDoes the explanans/explanandum switch between intro and analysis?",
+    "crumbs": [
+      "Part II: Methods",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Repetition and consistency methods <span class=\"badge badge-draft1\">✎ Very rough draft</span></span>"
+    ]
+  },
+  {
+    "objectID": "chapters/repetition/consistency_methods.html#over-representation-of-suspicious-values",
+    "href": "chapters/repetition/consistency_methods.html#over-representation-of-suspicious-values",
+    "title": "6  Repetition and consistency methods ✎ Very rough draft",
+    "section": "6.5 Over-representation of suspicious values",
+    "text": "6.5 Over-representation of suspicious values\n\nOver-representation of reported round or repeated difference scores, mean/SD/quartiles between groups, etc.",
+    "crumbs": [
+      "Part II: Methods",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Repetition and consistency methods <span class=\"badge badge-draft1\">✎ Very rough draft</span></span>"
+    ]
+  },
+  {
+    "objectID": "chapters/repetition/consistency_methods.html#preregistration-vs.-paper",
+    "href": "chapters/repetition/consistency_methods.html#preregistration-vs.-paper",
+    "title": "6  Repetition and consistency methods ✎ Very rough draft",
+    "section": "6.6 Preregistration vs. paper",
+    "text": "6.6 Preregistration vs. paper\n\nDoes the prereg match the paper?",
+    "crumbs": [
+      "Part II: Methods",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Repetition and consistency methods <span class=\"badge badge-draft1\">✎ Very rough draft</span></span>"
+    ]
+  },
+  {
+    "objectID": "chapters/repetition/consistency_methods.html#sem-consistency",
+    "href": "chapters/repetition/consistency_methods.html#sem-consistency",
+    "title": "6  Repetition and consistency methods ✎ Very rough draft",
+    "section": "6.7 SEM consistency",
+    "text": "6.7 SEM consistency\n\nSEM and consistency of degrees of freedom with parameters and indicators",
+    "crumbs": [
+      "Part II: Methods",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Repetition and consistency methods <span class=\"badge badge-draft1\">✎ Very rough draft</span></span>"
+    ]
+  },
+  {
+    "objectID": "chapters/recalculation_methods.html",
+    "href": "chapters/recalculation_methods.html",
+    "title": "7  Recalculation methods ✎ Very rough draft",
+    "section": "",
+    "text": "7.1 Recalculating p-values",
+    "crumbs": [
+      "Part II: Methods",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Recalculation methods <span class=\"badge badge-draft1\">✎ Very rough draft</span></span>"
+    ]
+  },
+  {
+    "objectID": "chapters/recalculation_methods.html#recalculating-p-values",
+    "href": "chapters/recalculation_methods.html#recalculating-p-values",
+    "title": "7  Recalculation methods ✎ Very rough draft",
+    "section": "",
+    "text": "From test statistics: statcheck + its false positives\nFrom summary statistics; accounting for rounding",
+    "crumbs": [
+      "Part II: Methods",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Recalculation methods <span class=\"badge badge-draft1\">✎ Very rough draft</span></span>"
+    ]
+  },
+  {
+    "objectID": "chapters/recalculation_methods.html#recalculating-effect-sizes",
+    "href": "chapters/recalculation_methods.html#recalculating-effect-sizes",
+    "title": "7  Recalculation methods ✎ Very rough draft",
+    "section": "7.2 Recalculating effect sizes",
+    "text": "7.2 Recalculating effect sizes\n\nCohen’s d and partial eta-squared\nNot just for recalculating already reported effect sizes to check consistency, but also calculating ones not reported to check plausibility\nStandardized + SDs to unstandardized, with plausibility of both",
+    "crumbs": [
+      "Part II: Methods",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Recalculation methods <span class=\"badge badge-draft1\">✎ Very rough draft</span></span>"
+    ]
+  },
+  {
+    "objectID": "chapters/recalculation_methods.html#confidence-intervals-and-bounds",
+    "href": "chapters/recalculation_methods.html#confidence-intervals-and-bounds",
+    "title": "7  Recalculation methods ✎ Very rough draft",
+    "section": "7.3 Confidence intervals and bounds",
+    "text": "7.3 Confidence intervals and bounds\n\nRecalculating confidence intervals for all the above",
+    "crumbs": [
+      "Part II: Methods",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Recalculation methods <span class=\"badge badge-draft1\">✎ Very rough draft</span></span>"
+    ]
+  },
+  {
+    "objectID": "chapters/recalculation_methods.html#recalculation-under-partial-information",
+    "href": "chapters/recalculation_methods.html#recalculation-under-partial-information",
+    "title": "7  Recalculation methods ✎ Very rough draft",
+    "section": "7.4 Recalculation under partial information",
+    "text": "7.4 Recalculation under partial information\n\nBounds etc., e.g., within-subjects t-test",
+    "crumbs": [
+      "Part II: Methods",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Recalculation methods <span class=\"badge badge-draft1\">✎ Very rough draft</span></span>"
+    ]
+  },
+  {
+    "objectID": "chapters/recalculation_methods.html#other-recalculations",
+    "href": "chapters/recalculation_methods.html#other-recalculations",
+    "title": "7  Recalculation methods ✎ Very rough draft",
+    "section": "7.5 Other recalculations",
+    "text": "7.5 Other recalculations\n\nBeta and SE\nSEM degrees of freedom\nRunning regressions from correlation tables",
+    "crumbs": [
+      "Part II: Methods",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Recalculation methods <span class=\"badge badge-draft1\">✎ Very rough draft</span></span>"
+    ]
+  },
+  {
+    "objectID": "chapters/granularity_methods.html",
+    "href": "chapters/granularity_methods.html",
+    "title": "8  Granularity methods ✎ Very rough draft",
+    "section": "",
+    "text": "8.1 GRIM and MER",
+    "crumbs": [
+      "Part II: Methods",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Granularity methods <span class=\"badge badge-draft1\">✎ Very rough draft</span></span>"
+    ]
+  },
+  {
+    "objectID": "chapters/granularity_methods.html#grim-and-mer",
+    "href": "chapters/granularity_methods.html#grim-and-mer",
+    "title": "8  Granularity methods ✎ Very rough draft",
+    "section": "",
+    "text": "GRIM (Granularity-Related Inconsistency of Means) test\nMER (Mean Equality Rounding) test\nPower considerations\nFalse positive rates",
+    "crumbs": [
+      "Part II: Methods",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Granularity methods <span class=\"badge badge-draft1\">✎ Very rough draft</span></span>"
+    ]
+  },
+  {
+    "objectID": "chapters/granularity_methods.html#grim-u",
+    "href": "chapters/granularity_methods.html#grim-u",
+    "title": "8  Granularity methods ✎ Very rough draft",
+    "section": "8.2 GRIM-U",
+    "text": "8.2 GRIM-U\n\nExtensions and variants of the GRIM test",
+    "crumbs": [
+      "Part II: Methods",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Granularity methods <span class=\"badge badge-draft1\">✎ Very rough draft</span></span>"
+    ]
+  },
+  {
+    "objectID": "chapters/bounds_methods.html",
+    "href": "chapters/bounds_methods.html",
+    "title": "9  Bounds methods ✎ Very rough draft",
+    "section": "",
+    "text": "9.1 Means bounds and SD bounds",
+    "crumbs": [
+      "Part II: Methods",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Bounds methods <span class=\"badge badge-draft1\">✎ Very rough draft</span></span>"
+    ]
+  },
+  {
+    "objectID": "chapters/bounds_methods.html#means-bounds-and-sd-bounds",
+    "href": "chapters/bounds_methods.html#means-bounds-and-sd-bounds",
+    "title": "9  Bounds methods ✎ Very rough draft",
+    "section": "",
+    "text": "TIDES + power + false positives\nPlausibility as well as possibility",
+    "crumbs": [
+      "Part II: Methods",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Bounds methods <span class=\"badge badge-draft1\">✎ Very rough draft</span></span>"
+    ]
+  },
+  {
+    "objectID": "chapters/bounds_methods.html#ci-bounds-vs.-estimates",
+    "href": "chapters/bounds_methods.html#ci-bounds-vs.-estimates",
+    "title": "9  Bounds methods ✎ Very rough draft",
+    "section": "9.2 CI bounds vs. estimates",
+    "text": "9.2 CI bounds vs. estimates\n\nEstimate in CIs\nHarder test: estimate in middle of CIs. Bounds of the mean given the CIs, i.e., is it in the bounds that define the middle given rounding",
+    "crumbs": [
+      "Part II: Methods",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Bounds methods <span class=\"badge badge-draft1\">✎ Very rough draft</span></span>"
+    ]
+  },
+  {
+    "objectID": "chapters/bounds_methods.html#mean-inside-range",
+    "href": "chapters/bounds_methods.html#mean-inside-range",
+    "title": "9  Bounds methods ✎ Very rough draft",
+    "section": "9.3 Mean inside range",
+    "text": "9.3 Mean inside range\n\nIs the reported mean inside the possible range of the measure?",
+    "crumbs": [
+      "Part II: Methods",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Bounds methods <span class=\"badge badge-draft1\">✎ Very rough draft</span></span>"
+    ]
+  },
+  {
+    "objectID": "chapters/bounds_methods.html#metric-bounds",
+    "href": "chapters/bounds_methods.html#metric-bounds",
+    "title": "9  Bounds methods ✎ Very rough draft",
+    "section": "9.4 Metric bounds",
+    "text": "9.4 Metric bounds\n\nE.g., correlations must be in [-1, 1]",
+    "crumbs": [
+      "Part II: Methods",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Bounds methods <span class=\"badge badge-draft1\">✎ Very rough draft</span></span>"
+    ]
+  },
+  {
+    "objectID": "chapters/bounds_methods.html#correlation-matrix-positive-definiteness",
+    "href": "chapters/bounds_methods.html#correlation-matrix-positive-definiteness",
+    "title": "9  Bounds methods ✎ Very rough draft",
+    "section": "9.5 Correlation matrix positive definiteness",
+    "text": "9.5 Correlation matrix positive definiteness\n\nChecking whether reported correlation tables are positive definite",
+    "crumbs": [
+      "Part II: Methods",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Bounds methods <span class=\"badge badge-draft1\">✎ Very rough draft</span></span>"
+    ]
+  },
+  {
+    "objectID": "chapters/reconstruction_resampling_simulation-methods.html",
+    "href": "chapters/reconstruction_resampling_simulation-methods.html",
+    "title": "10  Reconstruction, resampling, and simulation methods ✎ Very rough draft",
+    "section": "",
+    "text": "10.1 SPRITE",
+    "crumbs": [
+      "Part II: Methods",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Reconstruction, resampling, and simulation methods <span class=\"badge badge-draft1\">✎ Very rough draft</span></span>"
+    ]
+  },
+  {
+    "objectID": "chapters/reconstruction_resampling_simulation-methods.html#sprite",
+    "href": "chapters/reconstruction_resampling_simulation-methods.html#sprite",
+    "title": "10  Reconstruction, resampling, and simulation methods ✎ Very rough draft",
+    "section": "",
+    "text": "Sample Parameter Reconstruction via Iterative Techniques",
+    "crumbs": [
+      "Part II: Methods",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Reconstruction, resampling, and simulation methods <span class=\"badge badge-draft1\">✎ Very rough draft</span></span>"
+    ]
+  },
+  {
+    "objectID": "chapters/reconstruction_resampling_simulation-methods.html#closure-and-horns-metric",
+    "href": "chapters/reconstruction_resampling_simulation-methods.html#closure-and-horns-metric",
+    "title": "10  Reconstruction, resampling, and simulation methods ✎ Very rough draft",
+    "section": "10.2 CLOSURE and Horn’s metric",
+    "text": "10.2 CLOSURE and Horn’s metric\n\nCLOSURE method\nHorn’s metric",
+    "crumbs": [
+      "Part II: Methods",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Reconstruction, resampling, and simulation methods <span class=\"badge badge-draft1\">✎ Very rough draft</span></span>"
+    ]
+  },
+  {
+    "objectID": "chapters/reconstruction_resampling_simulation-methods.html#simulation-and-bootstrapping",
+    "href": "chapters/reconstruction_resampling_simulation-methods.html#simulation-and-bootstrapping",
+    "title": "10  Reconstruction, resampling, and simulation methods ✎ Very rough draft",
+    "section": "10.3 Simulation and bootstrapping",
+    "text": "10.3 Simulation and bootstrapping\n\nSimulation/bootstrapping: how likely given values are given a much larger, more trustworthy sample\nResampling results from data to examine plausibility\nUsing within-meta meta-analysis of SDs from the same outcome to examine differences between each sample and the meta-SD\n\n\n10.3.1 Caveats\n\nAlthough this relies on prior data and the current study may have different selection effects or constraints, the other side of this coin is worth considering",
+    "crumbs": [
+      "Part II: Methods",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Reconstruction, resampling, and simulation methods <span class=\"badge badge-draft1\">✎ Very rough draft</span></span>"
+    ]
+  },
+  {
+    "objectID": "chapters/design_methods.html",
+    "href": "chapters/design_methods.html",
+    "title": "11  Design methods ✎ Very rough draft",
+    "section": "",
+    "text": "11.1 Recruitment rates",
+    "crumbs": [
+      "Part II: Methods",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Design methods <span class=\"badge badge-draft1\">✎ Very rough draft</span></span>"
+    ]
+  },
+  {
+    "objectID": "chapters/design_methods.html#recruitment-rates",
+    "href": "chapters/design_methods.html#recruitment-rates",
+    "title": "11  Design methods ✎ Very rough draft",
+    "section": "",
+    "text": "Plausibility of reported recruitment rates",
+    "crumbs": [
+      "Part II: Methods",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Design methods <span class=\"badge badge-draft1\">✎ Very rough draft</span></span>"
+    ]
+  },
+  {
+    "objectID": "chapters/design_methods.html#attrition-rates",
+    "href": "chapters/design_methods.html#attrition-rates",
+    "title": "11  Design methods ✎ Very rough draft",
+    "section": "11.2 Attrition rates",
+    "text": "11.2 Attrition rates\n\nPlausibility of reported attrition/dropout rates",
+    "crumbs": [
+      "Part II: Methods",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Design methods <span class=\"badge badge-draft1\">✎ Very rough draft</span></span>"
+    ]
+  },
+  {
+    "objectID": "chapters/design_methods.html#randomisation-methods",
+    "href": "chapters/design_methods.html#randomisation-methods",
+    "title": "11  Design methods ✎ Very rough draft",
+    "section": "11.3 Randomisation methods",
+    "text": "11.3 Randomisation methods\n\n11.3.1 Differences at baseline\n\nCarlisle method\nBaseline balance checks and variants\n\n\n\n11.3.2 Randomisation plausibility\n\nE.g., claimed to randomise students to groups for an intervention, but it would have to be at the level of classrooms or schools\nBinomial/multinomial distribution checks: only useful for testing weirdly unbalanced assignment, not too-perfectly balanced, as it’s technically the most probable outcome",
+    "crumbs": [
+      "Part II: Methods",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Design methods <span class=\"badge badge-draft1\">✎ Very rough draft</span></span>"
+    ]
+  },
+  {
+    "objectID": "chapters/measurement_methods.html",
+    "href": "chapters/measurement_methods.html",
+    "title": "12  Measurement methods ✎ Very rough draft",
+    "section": "",
+    "text": "12.1 Jingle and jangle fallacies",
+    "crumbs": [
+      "Part II: Methods",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Measurement methods <span class=\"badge badge-draft1\">✎ Very rough draft</span></span>"
+    ]
+  },
+  {
+    "objectID": "chapters/measurement_methods.html#jingle-and-jangle-fallacies",
+    "href": "chapters/measurement_methods.html#jingle-and-jangle-fallacies",
+    "title": "12  Measurement methods ✎ Very rough draft",
+    "section": "",
+    "text": "Same name, different constructs (jingle)\nDifferent names, same construct (jangle)",
+    "crumbs": [
+      "Part II: Methods",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Measurement methods <span class=\"badge badge-draft1\">✎ Very rough draft</span></span>"
+    ]
+  },
+  {
+    "objectID": "chapters/measurement_methods.html#redundancy",
+    "href": "chapters/measurement_methods.html#redundancy",
+    "title": "12  Measurement methods ✎ Very rough draft",
+    "section": "12.2 Redundancy",
+    "text": "12.2 Redundancy\n\nBainbridge’s work on measurement redundancy",
+    "crumbs": [
+      "Part II: Methods",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Measurement methods <span class=\"badge badge-draft1\">✎ Very rough draft</span></span>"
+    ]
+  },
+  {
+    "objectID": "chapters/measurement_methods.html#ad-hoc-measure-rate",
+    "href": "chapters/measurement_methods.html#ad-hoc-measure-rate",
+    "title": "12  Measurement methods ✎ Very rough draft",
+    "section": "12.3 Ad hoc measure rate",
+    "text": "12.3 Ad hoc measure rate\n\nPrevalence of ad hoc measures and implications for trustworthiness",
+    "crumbs": [
+      "Part II: Methods",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Measurement methods <span class=\"badge badge-draft1\">✎ Very rough draft</span></span>"
+    ]
+  },
+  {
+    "objectID": "chapters/measurement_methods.html#disattenuated-associations",
+    "href": "chapters/measurement_methods.html#disattenuated-associations",
+    "title": "12  Measurement methods ✎ Very rough draft",
+    "section": "12.4 Disattenuated associations",
+    "text": "12.4 Disattenuated associations\n\nCorrecting for measurement error; implications when not done",
+    "crumbs": [
+      "Part II: Methods",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Measurement methods <span class=\"badge badge-draft1\">✎ Very rough draft</span></span>"
+    ]
+  },
+  {
+    "objectID": "chapters/measurement_methods.html#reliability-as-a-prerequisite-to-replicability",
+    "href": "chapters/measurement_methods.html#reliability-as-a-prerequisite-to-replicability",
+    "title": "12  Measurement methods ✎ Very rough draft",
+    "section": "12.5 Reliability as a prerequisite to replicability",
+    "text": "12.5 Reliability as a prerequisite to replicability\n\nReliability “paradox”",
+    "crumbs": [
+      "Part II: Methods",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Measurement methods <span class=\"badge badge-draft1\">✎ Very rough draft</span></span>"
+    ]
+  },
+  {
+    "objectID": "chapters/measurement_methods.html#pseudo-effects",
+    "href": "chapters/measurement_methods.html#pseudo-effects",
+    "title": "12  Measurement methods ✎ Very rough draft",
+    "section": "12.6 Pseudo effects",
+    "text": "12.6 Pseudo effects\n\nEffects that arise from measurement artifacts rather than real phenomena",
+    "crumbs": [
+      "Part II: Methods",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Measurement methods <span class=\"badge badge-draft1\">✎ Very rough draft</span></span>"
+    ]
+  },
+  {
+    "objectID": "chapters/measurement_methods.html#mode-alignment",
+    "href": "chapters/measurement_methods.html#mode-alignment",
+    "title": "12  Measurement methods ✎ Very rough draft",
+    "section": "12.7 Mode alignment",
+    "text": "12.7 Mode alignment\n\nEspecially self-reported behavior\nDoes the mode of measurement match the construct being assessed?",
+    "crumbs": [
+      "Part II: Methods",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Measurement methods <span class=\"badge badge-draft1\">✎ Very rough draft</span></span>"
+    ]
+  },
+  {
+    "objectID": "chapters/theory_specification_methods.html",
+    "href": "chapters/theory_specification_methods.html",
+    "title": "13  Theory specification methods ✎ Very rough draft",
+    "section": "",
+    "text": "13.1 Building a discrimination repertoire",
+    "crumbs": [
+      "Part II: Methods",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Theory specification methods <span class=\"badge badge-draft1\">✎ Very rough draft</span></span>"
+    ]
+  },
+  {
+    "objectID": "chapters/theory_specification_methods.html#building-a-discrimination-repertoire",
+    "href": "chapters/theory_specification_methods.html#building-a-discrimination-repertoire",
+    "title": "13  Theory specification methods ✎ Very rough draft",
+    "section": "",
+    "text": "Learning to make up tacts will help you spot it occurring elsewhere, give you a discrimination and tacting repertoire to point it out yourself\nSee: Chambers book, Neuroskeptic 9 circles of hell",
+    "crumbs": [
+      "Part II: Methods",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Theory specification methods <span class=\"badge badge-draft1\">✎ Very rough draft</span></span>"
+    ]
+  },
+  {
+    "objectID": "chapters/theory_specification_methods.html#can-you-discriminate-their-hypothesis-rq-and-goals",
+    "href": "chapters/theory_specification_methods.html#can-you-discriminate-their-hypothesis-rq-and-goals",
+    "title": "13  Theory specification methods ✎ Very rough draft",
+    "section": "13.2 Can you discriminate their hypothesis, RQ, and goals?",
+    "text": "13.2 Can you discriminate their hypothesis, RQ, and goals?\n\nDescription, prediction, influence — or a mushy none-of-the-above?",
+    "crumbs": [
+      "Part II: Methods",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Theory specification methods <span class=\"badge badge-draft1\">✎ Very rough draft</span></span>"
+    ]
+  },
+  {
+    "objectID": "chapters/theory_specification_methods.html#bullshit",
+    "href": "chapters/theory_specification_methods.html#bullshit",
+    "title": "13  Theory specification methods ✎ Very rough draft",
+    "section": "13.3 Bullshit",
+    "text": "13.3 Bullshit\n\nIdentifying claims that are not even attempting to be truthful",
+    "crumbs": [
+      "Part II: Methods",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Theory specification methods <span class=\"badge badge-draft1\">✎ Very rough draft</span></span>"
+    ]
+  },
+  {
+    "objectID": "chapters/theory_specification_methods.html#goals",
+    "href": "chapters/theory_specification_methods.html#goals",
+    "title": "13  Theory specification methods ✎ Very rough draft",
+    "section": "13.4 Goals",
+    "text": "13.4 Goals\n\nDescription, prediction, influence\nExplananda vs explanantia, circular reasoning",
+    "crumbs": [
+      "Part II: Methods",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Theory specification methods <span class=\"badge badge-draft1\">✎ Very rough draft</span></span>"
+    ]
+  },
+  {
+    "objectID": "chapters/theory_specification_methods.html#subjunctive-vs.-indicative-theory",
+    "href": "chapters/theory_specification_methods.html#subjunctive-vs.-indicative-theory",
+    "title": "13  Theory specification methods ✎ Very rough draft",
+    "section": "13.5 Subjunctive vs. indicative theory",
+    "text": "13.5 Subjunctive vs. indicative theory\n\n13.5.1 Would It Be Tight\n\nBurden of proof: what evidence do the authors provide that their theory would not merely be tight?\n\n\n\n13.5.2 In a world fallacy\n\nTheories that only work under unstated ideal conditions",
+    "crumbs": [
+      "Part II: Methods",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Theory specification methods <span class=\"badge badge-draft1\">✎ Very rough draft</span></span>"
+    ]
+  },
+  {
+    "objectID": "chapters/theory_specification_methods.html#logical-arguments",
+    "href": "chapters/theory_specification_methods.html#logical-arguments",
+    "title": "13  Theory specification methods ✎ Very rough draft",
+    "section": "13.6 Logical arguments",
+    "text": "13.6 Logical arguments\n\nSound and valid arguments\nFailure to consider alternative explanations\nAffirmation of the consequent\nAuxiliary hypotheses",
+    "crumbs": [
+      "Part II: Methods",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Theory specification methods <span class=\"badge badge-draft1\">✎ Very rough draft</span></span>"
+    ]
+  },
+  {
+    "objectID": "chapters/theory_specification_methods.html#motte-and-bailey-arguments",
+    "href": "chapters/theory_specification_methods.html#motte-and-bailey-arguments",
+    "title": "13  Theory specification methods ✎ Very rough draft",
+    "section": "13.7 Motte and Bailey arguments",
+    "text": "13.7 Motte and Bailey arguments\n\nStrategic retreat to defensible positions when stronger claims are challenged",
+    "crumbs": [
+      "Part II: Methods",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Theory specification methods <span class=\"badge badge-draft1\">✎ Very rough draft</span></span>"
+    ]
+  },
+  {
+    "objectID": "chapters/theory_specification_methods.html#strategic-ambiguity",
+    "href": "chapters/theory_specification_methods.html#strategic-ambiguity",
+    "title": "13  Theory specification methods ✎ Very rough draft",
+    "section": "13.8 (Strategic) ambiguity",
+    "text": "13.8 (Strategic) ambiguity\n\nGeneral claims require generalised effects",
+    "crumbs": [
+      "Part II: Methods",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Theory specification methods <span class=\"badge badge-draft1\">✎ Very rough draft</span></span>"
+    ]
+  },
+  {
+    "objectID": "chapters/theory_specification_methods.html#not-even-wrong-claims",
+    "href": "chapters/theory_specification_methods.html#not-even-wrong-claims",
+    "title": "13  Theory specification methods ✎ Very rough draft",
+    "section": "13.9 Not even wrong claims",
+    "text": "13.9 Not even wrong claims\n\nWhat is your estimand, counterfactuals",
+    "crumbs": [
+      "Part II: Methods",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Theory specification methods <span class=\"badge badge-draft1\">✎ Very rough draft</span></span>"
+    ]
+  },
+  {
+    "objectID": "chapters/theory_specification_methods.html#lego-science",
+    "href": "chapters/theory_specification_methods.html#lego-science",
+    "title": "13  Theory specification methods ✎ Very rough draft",
+    "section": "13.10 Lego science",
+    "text": "13.10 Lego science\n\nMechanistic assembly of findings without theoretical coherence",
+    "crumbs": [
+      "Part II: Methods",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Theory specification methods <span class=\"badge badge-draft1\">✎ Very rough draft</span></span>"
+    ]
+  },
+  {
+    "objectID": "chapters/theory_specification_methods.html#ignorance-systems",
+    "href": "chapters/theory_specification_methods.html#ignorance-systems",
+    "title": "13  Theory specification methods ✎ Very rough draft",
+    "section": "13.11 Ignorance systems",
+    "text": "13.11 Ignorance systems\n\nResearch areas sustained by not asking certain questions",
+    "crumbs": [
+      "Part II: Methods",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Theory specification methods <span class=\"badge badge-draft1\">✎ Very rough draft</span></span>"
+    ]
+  },
+  {
+    "objectID": "chapters/data_extraction_methods.html",
+    "href": "chapters/data_extraction_methods.html",
+    "title": "14  Data extraction methods ✎ Very rough draft",
+    "section": "",
+    "text": "14.1 WebPlotDigitizer",
+    "crumbs": [
+      "Part II: Methods",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Data extraction methods <span class=\"badge badge-draft1\">✎ Very rough draft</span></span>"
+    ]
+  },
+  {
+    "objectID": "chapters/data_extraction_methods.html#webplotdigitizer",
+    "href": "chapters/data_extraction_methods.html#webplotdigitizer",
+    "title": "14  Data extraction methods ✎ Very rough draft",
+    "section": "",
+    "text": "Extracting data from published figures using WebPlotDigitizer",
+    "crumbs": [
+      "Part II: Methods",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Data extraction methods <span class=\"badge badge-draft1\">✎ Very rough draft</span></span>"
+    ]
+  },
+  {
+    "objectID": "chapters/data_extraction_methods.html#contacting-authors",
+    "href": "chapters/data_extraction_methods.html#contacting-authors",
+    "title": "14  Data extraction methods ✎ Very rough draft",
+    "section": "14.2 Contacting authors",
+    "text": "14.2 Contacting authors\n\nAsking for scatter plots, frequency plots, etc.\nRequesting data or additional information to support trustworthiness assessment",
+    "crumbs": [
+      "Part II: Methods",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Data extraction methods <span class=\"badge badge-draft1\">✎ Very rough draft</span></span>"
+    ]
+  },
+  {
+    "objectID": "exercises/critiquing_specific_types_of_articles.html",
+    "href": "exercises/critiquing_specific_types_of_articles.html",
+    "title": "15  Critiquing specific types of articles ✎ Very rough draft",
+    "section": "",
+    "text": "15.1 Original research",
+    "crumbs": [
+      "Part III: Organising",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Critiquing specific types of articles <span class=\"badge badge-draft1\">✎ Very rough draft</span></span>"
+    ]
+  },
+  {
+    "objectID": "exercises/critiquing_specific_types_of_articles.html#original-research",
+    "href": "exercises/critiquing_specific_types_of_articles.html#original-research",
+    "title": "15  Critiquing specific types of articles ✎ Very rough draft",
+    "section": "",
+    "text": "Applying trustworthiness assessment methods to original empirical articles",
+    "crumbs": [
+      "Part III: Organising",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Critiquing specific types of articles <span class=\"badge badge-draft1\">✎ Very rough draft</span></span>"
+    ]
+  },
+  {
+    "objectID": "exercises/critiquing_specific_types_of_articles.html#meta-analyses",
+    "href": "exercises/critiquing_specific_types_of_articles.html#meta-analyses",
+    "title": "15  Critiquing specific types of articles ✎ Very rough draft",
+    "section": "15.2 Meta-analyses",
+    "text": "15.2 Meta-analyses\n\nSpecific considerations when assessing trustworthiness of meta-analytic studies",
+    "crumbs": [
+      "Part III: Organising",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Critiquing specific types of articles <span class=\"badge badge-draft1\">✎ Very rough draft</span></span>"
+    ]
+  },
+  {
+    "objectID": "exercises/critiquing_specific_types_of_articles.html#rcts",
+    "href": "exercises/critiquing_specific_types_of_articles.html#rcts",
+    "title": "15  Critiquing specific types of articles ✎ Very rough draft",
+    "section": "15.3 RCTs",
+    "text": "15.3 RCTs\n\nSpecific considerations when assessing trustworthiness of randomised controlled trials",
+    "crumbs": [
+      "Part III: Organising",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Critiquing specific types of articles <span class=\"badge badge-draft1\">✎ Very rough draft</span></span>"
+    ]
+  },
+  {
+    "objectID": "exercises/inspect_sr.html",
+    "href": "exercises/inspect_sr.html",
+    "title": "16  INSPECT-SR ✎ Very rough draft",
+    "section": "",
+    "text": "16.1 Overview",
+    "crumbs": [
+      "Part III: Organising",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>INSPECT-SR <span class=\"badge badge-draft1\">✎ Very rough draft</span></span>"
+    ]
+  },
+  {
+    "objectID": "exercises/inspect_sr.html#overview",
+    "href": "exercises/inspect_sr.html#overview",
+    "title": "16  INSPECT-SR ✎ Very rough draft",
+    "section": "",
+    "text": "The INSPECT-SR checklist for systematic reviewers assessing trustworthiness of included studies",
+    "crumbs": [
+      "Part III: Organising",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>INSPECT-SR <span class=\"badge badge-draft1\">✎ Very rough draft</span></span>"
+    ]
+  },
+  {
+    "objectID": "exercises/inspect_sr.html#inspecting-post-publication-notices",
+    "href": "exercises/inspect_sr.html#inspecting-post-publication-notices",
+    "title": "16  INSPECT-SR ✎ Very rough draft",
+    "section": "16.2 1. Inspecting post-publication notices",
+    "text": "16.2 1. Inspecting post-publication notices\n\n1.1. Does the study have an associated retraction?\n1.2. Does the study have an associated expression of concern or other relevant post-publication notice?\n1.3. Do other studies by the research team highlight causes for concern (associated retractions, expressions of concern, relevant post-publication notices)?",
+    "crumbs": [
+      "Part III: Organising",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>INSPECT-SR <span class=\"badge badge-draft1\">✎ Very rough draft</span></span>"
+    ]
+  },
+  {
+    "objectID": "exercises/inspect_sr.html#inspecting-conduct-governance-and-transparency",
+    "href": "exercises/inspect_sr.html#inspecting-conduct-governance-and-transparency",
+    "title": "16  INSPECT-SR ✎ Very rough draft",
+    "section": "16.3 2. Inspecting conduct, governance, and transparency",
+    "text": "16.3 2. Inspecting conduct, governance, and transparency\n\n2.1. Are there concerns relating to ethical approval?\n2.2. Are there concerns relating to the timing or absence of study registration?\n2.3. Are there important inconsistencies between the publication and the registration documents?\n2.4. Is the recruitment of participants implausible?\n2.5. Are the reported methods implausible considering the reported resources?",
+    "crumbs": [
+      "Part III: Organising",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>INSPECT-SR <span class=\"badge badge-draft1\">✎ Very rough draft</span></span>"
+    ]
+  },
+  {
+    "objectID": "exercises/inspect_sr.html#inspecting-text-and-publication-details",
+    "href": "exercises/inspect_sr.html#inspecting-text-and-publication-details",
+    "title": "16  INSPECT-SR ✎ Very rough draft",
+    "section": "16.4 3. Inspecting text and publication details",
+    "text": "16.4 3. Inspecting text and publication details\n\n3.1. Are there concerns relating to duplicated content, such as text or tables, or text that is incompatible with the study?\n3.2. Is there evidence of manipulation or duplication of figures?",
+    "crumbs": [
+      "Part III: Organising",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>INSPECT-SR <span class=\"badge badge-draft1\">✎ Very rough draft</span></span>"
+    ]
+  },
+  {
+    "objectID": "exercises/inspect_sr.html#inspecting-results-in-the-study",
+    "href": "exercises/inspect_sr.html#inspecting-results-in-the-study",
+    "title": "16  INSPECT-SR ✎ Very rough draft",
+    "section": "16.5 4. Inspecting results in the study",
+    "text": "16.5 4. Inspecting results in the study\n\n4.1. Are there any unexplained discrepancies between reported data and participant eligibility criteria?\n4.2. Are numbers of participants allocated to each group implausible given the allocation method?\n4.3. Are any baseline data implausible?\n4.4. Are there any discrepancies between results reported in figures, tables, and text?\n4.5. Are the numbers of participants lost to follow-up implausible?\n4.6. Are there any unexplained inconsistencies in the numbers of participants?\n4.7. Are any outcome data, including estimated treatment effects, implausible?\n4.8. Are the means and variances of integer data impossible?\n4.9. Are there errors in statistical results?\n4.10. Are any other contradictions implied by the data?\n4.11. Are there inconsistencies in descriptions of methods and results across publications describing the study?",
+    "crumbs": [
+      "Part III: Organising",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>INSPECT-SR <span class=\"badge badge-draft1\">✎ Very rough draft</span></span>"
+    ]
+  },
+  {
+    "objectID": "exercises/organising_critique.html",
+    "href": "exercises/organising_critique.html",
+    "title": "17  Organising critique ✎ Very rough draft",
+    "section": "",
+    "text": "17.1 What to do in what order",
+    "crumbs": [
+      "Part III: Organising",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Organising critique <span class=\"badge badge-draft1\">✎ Very rough draft</span></span>"
+    ]
+  },
+  {
+    "objectID": "exercises/organising_critique.html#what-to-do-in-what-order",
+    "href": "exercises/organising_critique.html#what-to-do-in-what-order",
+    "title": "17  Organising critique ✎ Very rough draft",
+    "section": "",
+    "text": "Valuing your time\nPrioritising the most informative checks",
+    "crumbs": [
+      "Part III: Organising",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Organising critique <span class=\"badge badge-draft1\">✎ Very rough draft</span></span>"
+    ]
+  },
+  {
+    "objectID": "exercises/organising_critique.html#critiquing-what-matters",
+    "href": "exercises/organising_critique.html#critiquing-what-matters",
+    "title": "17  Organising critique ✎ Very rough draft",
+    "section": "17.2 Critiquing what matters",
+    "text": "17.2 Critiquing what matters\n\nCritique as awareness raising / confrontation of hubris",
+    "crumbs": [
+      "Part III: Organising",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Organising critique <span class=\"badge badge-draft1\">✎ Very rough draft</span></span>"
+    ]
+  },
+  {
+    "objectID": "exercises/organising_critique.html#meta-science-findings-should-not-be-anonymised",
+    "href": "exercises/organising_critique.html#meta-science-findings-should-not-be-anonymised",
+    "title": "17  Organising critique ✎ Very rough draft",
+    "section": "17.3 Meta-science findings should not be anonymised",
+    "text": "17.3 Meta-science findings should not be anonymised\n\nThe case for transparency in identifying problematic work",
+    "crumbs": [
+      "Part III: Organising",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Organising critique <span class=\"badge badge-draft1\">✎ Very rough draft</span></span>"
+    ]
+  },
+  {
+    "objectID": "exercises/organising_critique.html#communicating-critique",
+    "href": "exercises/organising_critique.html#communicating-critique",
+    "title": "17  Organising critique ✎ Very rough draft",
+    "section": "17.4 Communicating critique",
+    "text": "17.4 Communicating critique\n\nCommunication pathways to elicit correction of the scientific record and scientific belief",
+    "crumbs": [
+      "Part III: Organising",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Organising critique <span class=\"badge badge-draft1\">✎ Very rough draft</span></span>"
+    ]
+  },
+  {
+    "objectID": "exercises/organising_critique.html#dealing-with-common-responses",
+    "href": "exercises/organising_critique.html#dealing-with-common-responses",
+    "title": "17  Organising critique ✎ Very rough draft",
+    "section": "17.5 Dealing with common responses",
+    "text": "17.5 Dealing with common responses\n\n“Do the numbers matter?”\nSometimes people are accused of not having the expertise/credentials to critique, but no-one needs credentials to cite\n“No critique, only cite”",
+    "crumbs": [
+      "Part III: Organising",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Organising critique <span class=\"badge badge-draft1\">✎ Very rough draft</span></span>"
+    ]
+  },
+  {
+    "objectID": "exercises/organising_critique.html#legal-issues",
+    "href": "exercises/organising_critique.html#legal-issues",
+    "title": "17  Organising critique ✎ Very rough draft",
+    "section": "17.6 Legal issues",
+    "text": "17.6 Legal issues\n\nConsiderations around defamation, legal threats, and protecting yourself when publishing critiques",
+    "crumbs": [
+      "Part III: Organising",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Organising critique <span class=\"badge badge-draft1\">✎ Very rough draft</span></span>"
+    ]
+  },
+  {
+    "objectID": "exercises/reflexive_critique.html",
+    "href": "exercises/reflexive_critique.html",
+    "title": "18  Reflexive critique ✎ Very rough draft",
+    "section": "",
+    "text": "18.1 Development, testing, and validation of forensic methods",
+    "crumbs": [
+      "Part III: Organising",
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Reflexive critique <span class=\"badge badge-draft1\">✎ Very rough draft</span></span>"
+    ]
+  },
+  {
+    "objectID": "exercises/reflexive_critique.html#development-testing-and-validation-of-forensic-methods",
+    "href": "exercises/reflexive_critique.html#development-testing-and-validation-of-forensic-methods",
+    "title": "18  Reflexive critique ✎ Very rough draft",
+    "section": "",
+    "text": "Forensic methods themselves must be scrutinised\nDiscard of flawed methods",
+    "crumbs": [
+      "Part III: Organising",
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Reflexive critique <span class=\"badge badge-draft1\">✎ Very rough draft</span></span>"
+    ]
+  },
+  {
+    "objectID": "exercises/reflexive_critique.html#examples-of-discarded-or-limited-methods",
+    "href": "exercises/reflexive_critique.html#examples-of-discarded-or-limited-methods",
+    "title": "18  Reflexive critique ✎ Very rough draft",
+    "section": "18.2 Examples of discarded or limited methods",
+    "text": "18.2 Examples of discarded or limited methods\n\n18.2.1 p-curve and z-curve\n\nLimitations that led to their exclusion from the main methods chapters\n\n\n\n18.2.2 STALT\n\nIssues with this method\n\n\n\n18.2.3 Other short-lived methods\n\nAlternative p-value approaches that were short-lived in the 2010s",
+    "crumbs": [
+      "Part III: Organising",
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Reflexive critique <span class=\"badge badge-draft1\">✎ Very rough draft</span></span>"
+    ]
+  },
+  {
+    "objectID": "appendices/lesson_plan.html",
+    "href": "appendices/lesson_plan.html",
+    "title": "19  Lesson plan ✎ Very rough draft",
+    "section": "",
+    "text": "19.1 Overview",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>19</span>  <span class='chapter-title'>Lesson plan <span class=\"badge badge-draft1\">✎ Very rough draft</span></span>"
+    ]
+  },
+  {
+    "objectID": "appendices/lesson_plan.html#overview",
+    "href": "appendices/lesson_plan.html#overview",
+    "title": "19  Lesson plan ✎ Very rough draft",
+    "section": "",
+    "text": "Suggested lesson plan for teaching trustworthiness assessment using this book",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>19</span>  <span class='chapter-title'>Lesson plan <span class=\"badge badge-draft1\">✎ Very rough draft</span></span>"
+    ]
+  },
+  {
+    "objectID": "appendices/lesson_plan.html#larger-practice-exercises",
+    "href": "appendices/lesson_plan.html#larger-practice-exercises",
+    "title": "19  Lesson plan ✎ Very rough draft",
+    "section": "19.2 Larger practice exercises",
+    "text": "19.2 Larger practice exercises\n\nFoody et al. (2013)\nVahey et al. (2015)\n“This Is The Worst Article Ever Written”",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>19</span>  <span class='chapter-title'>Lesson plan <span class=\"badge badge-draft1\">✎ Very rough draft</span></span>"
+    ]
+  },
+  {
+    "objectID": "license.html",
+    "href": "license.html",
+    "title": "20  License and citation",
+    "section": "",
+    "text": "© Ian Hussey (2025)\nText and figures are licensed under a Creative Commons Attribution 4.0 (CC BY 4.0) license.\nCode is licensed under the MIT License.\nYou are free to copy, share, adapt, and reuse the contents of this book — text, figures, and code — for any purpose, including commercial use, provided you cite it.\nCitation:\nHussey, I. & Cummins, J. (2025) Improving your statistical inferences using Monte Carlo simulation studies in tidyverse. github.com/ianhussey/improving-your-statistical-inferences-through-monte-carlo-simulation-studies",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>20</span>  <span class='chapter-title'>License and citation</span>"
+    ]
+  }
+]
