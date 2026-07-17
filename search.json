@@ -14,7 +14,7 @@
     "href": "index.html#introduction",
     "title": "Trustworthiness Assessment",
     "section": "",
-    "text": "Concepts.\nMethods.\nOrganising.\nExercises.",
+    "text": "Concepts.\nMethods.\nOrganising.\nDeveloping and validating forensic methods.",
     "crumbs": [
       "Introduction"
     ]
@@ -1216,47 +1216,80 @@
     ]
   },
   {
+    "objectID": "chapters/forensic_methods_require_validation.html",
+    "href": "chapters/forensic_methods_require_validation.html",
+    "title": "19  Forensic meta-science methods require validation ✎ Very rough draft",
+    "section": "",
+    "text": "19.1 Proposed standard\nMany forensic meta-science methods have been developed by non methodologists. This is probably not accidental: maybe it required some outside thinkers to develop the agonizingly simple math that GRIM is based on.\nBut, now that these methods have been conceived of, they need to be validated. There is an asymmetric reputational risk here: if we use these methods to determine that other research is untrustworthy, and it is in fact our methods that are untrustworthy, we are going to look quite silly. This is where the (quantitative) forensic meta-science research community is currently falling behind, and which work in our research group tries to improve.\nAt the same time, traditional methods validation in the sense of a simulation study under ideal conditions is insufficient here. Trustworthiness assessments are increasingly likely to be conducted by users of forensic meta-science methods rather than expert developers of these methods. As such, implementations of the methods need to be usable, they need to have UIs that guide users towards making sensible choices and away from non-sensible ones, and they need to have clearly specified interpretations of results and reporting guidelines, etc. We therefore conceptualise validation to be broader, along the following candidate dimensions.\nThis rubric defines actionable roadmaps for specification, validation, improvement, and the assessment of readiness (rather than being merely aspirational).\nProperties\nUsage\nEcosystem",
+    "crumbs": [
+      "Part IV: Developing and validating methods",
+      "<span class='chapter-number'>19</span>  <span class='chapter-title'>Forensic meta-science methods require validation <span class=\"badge badge-draft1\">✎ Very rough draft</span></span>"
+    ]
+  },
+  {
+    "objectID": "chapters/forensic_methods_require_validation.html#proposed-standard",
+    "href": "chapters/forensic_methods_require_validation.html#proposed-standard",
+    "title": "19  Forensic meta-science methods require validation ✎ Very rough draft",
+    "section": "",
+    "text": "Formal specification of method\n\n\nLogic, math, etc.\nScope of inference\nAssumptions\nLimitations\nUse and failure cases\n\n\nImplementation\n\n\nIn a free and open-source software library written in an open-source programming language, such as R or Python. In R library or equivalent.\nCode as primary output. Treat the implementation as the artefact under review. Open code, unit tests, reproducible fixtures, ;continuous integration.\nThis often involves additional considerations beyond the abstract method to handle real world use cases. Common considerations include data extraction, which is a whole realm of tasks in itself.\nNote that separation of library and tool is important for validation.\n\n\nValidation against simulated data\n\n\ne.g., Monte Carlo for stochastic methods, parameter sweep for deterministic methods, etc., to assess whether the method functions as expected over a wide range of known inputs. ADEMP reporting.\nUsing common performance metrics from research methods, such as sensitivity, specificity, empirical rejection rate (calibration under the null, ability and power to detect issues of what size), bias, coverage, etc.\nRobustness to nuisance parameters (e.g., rounded inputs and different rounding or truncation conventions, reporting standards, typos in inputs, number of items).\n\n\nValidation against human-coded data\n\n\nTo assess whether the method functions as expected over a wide range of realistic inputs. This is useful for surfacing issues to do with extraction/parsing, edge cases, etc.\nConsideration of gold vs. reference standards, reporting of inter-rater reliability between human-human, human-tool, or human-ai coders, etc.\nThis provides information on generalisability, validation within specific domains (e.g., reporting standards may differ between psychology and medicine; pdf formatting may differ between journals or publishers).\n\n\nLarge scale application\n\n\nSubstantive conclusions (e.g., re prevalence, severity etc) from applying the method to a large amount of real world data. Often (initially) using the same data used for validation against human coding, as part of the same process.\n\n\nAdversarial robustness / gameability.\n\n\nOnce a method is known, can it be evaded (e.g., reporting choices that defeat GRIM)? What vectors of gamability might exist?\n\n\n\nTool\n\n\nImplementation of the library in a UI tool (eg Shiny app), AI skill, etc. to increase usability/scalability.\nAudit trail: does the tool produce an auditable trail of inputs, outputs, versions of method/tool applied, etc.\n\n\nReporting standards\n\n\nInstructions on how to interpret and report results from the method/tool.\n\n\nTraining materials\n\n\nMaterials that train and ideally assess whether users can correctly use and report the method/tool, including its assumptions, limitations, use- and failure-cases etc.\n\n\nUsability\n\n\nEvidence that users find the library/tool to be adequately usable; and that misuse cases are assessed, detected and mitigated via human factors research.\n\n\n\nComparison\n\n\nWhen multiple implementations of a given or related method are available, head-to-head comparisons are informative. This can be along many of the above dimensions, from validation to usability to training materials, to a general assessment of use-cases.\nVersioning, maintenance & deprecation.\nVersioning of methods/tools.\nLast time of validation. Tools rot (PDF formats change, R deps break). Need for ongoing validation, not one-shot.\n\n\nReadiness\n\n\nTBD: Some sort of maturity-level or evidence-readiness scheme that integrates the above.",
+    "crumbs": [
+      "Part IV: Developing and validating methods",
+      "<span class='chapter-number'>19</span>  <span class='chapter-title'>Forensic meta-science methods require validation <span class=\"badge badge-draft1\">✎ Very rough draft</span></span>"
+    ]
+  },
+  {
+    "objectID": "chapters/validation_using_simulated_data.html",
+    "href": "chapters/validation_using_simulated_data.html",
+    "title": "20  Validating meta-science methods using simulated data ✎ Very rough draft",
+    "section": "",
+    "text": "This chapter will explain, with worked examples and R/tidyverse/purrr code, how to validate implementations of methods against simulated data. It differentiates between exhaustive grid sweeps and probabilistic Monte Carlo simulations.\nThis form of validation is essential to understanding whether a method works as expected under idea conditions (i.e., assuming no text extraction, parsing, etc issues; just perfect inputs), in terms of false positives, false negatives, coverage, bias, etc.",
+    "crumbs": [
+      "Part IV: Developing and validating methods",
+      "<span class='chapter-number'>20</span>  <span class='chapter-title'>Validating meta-science methods using simulated data <span class=\"badge badge-draft1\">✎ Very rough draft</span></span>"
+    ]
+  },
+  {
     "objectID": "appendices/lesson_plan.html",
     "href": "appendices/lesson_plan.html",
-    "title": "19  Lesson plan ✎ Very rough draft",
+    "title": "21  Lesson plan ✎ Very rough draft",
     "section": "",
-    "text": "19.1 Overview",
+    "text": "21.1 Overview",
     "crumbs": [
       "Appendices",
-      "<span class='chapter-number'>19</span>  <span class='chapter-title'>Lesson plan <span class=\"badge badge-draft1\">✎ Very rough draft</span></span>"
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>Lesson plan <span class=\"badge badge-draft1\">✎ Very rough draft</span></span>"
     ]
   },
   {
     "objectID": "appendices/lesson_plan.html#overview",
     "href": "appendices/lesson_plan.html#overview",
-    "title": "19  Lesson plan ✎ Very rough draft",
+    "title": "21  Lesson plan ✎ Very rough draft",
     "section": "",
     "text": "Suggested lesson plan for teaching trustworthiness assessment using this book",
     "crumbs": [
       "Appendices",
-      "<span class='chapter-number'>19</span>  <span class='chapter-title'>Lesson plan <span class=\"badge badge-draft1\">✎ Very rough draft</span></span>"
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>Lesson plan <span class=\"badge badge-draft1\">✎ Very rough draft</span></span>"
     ]
   },
   {
     "objectID": "appendices/lesson_plan.html#larger-practice-exercises",
     "href": "appendices/lesson_plan.html#larger-practice-exercises",
-    "title": "19  Lesson plan ✎ Very rough draft",
-    "section": "19.2 Larger practice exercises",
-    "text": "19.2 Larger practice exercises\n\nFoody et al. (2013)\nVahey et al. (2015)\n“This Is The Worst Article Ever Written”",
+    "title": "21  Lesson plan ✎ Very rough draft",
+    "section": "21.2 Larger practice exercises",
+    "text": "21.2 Larger practice exercises\n\nFoody et al. (2013)\nVahey et al. (2015)\n“This Is The Worst Article Ever Written”",
     "crumbs": [
       "Appendices",
-      "<span class='chapter-number'>19</span>  <span class='chapter-title'>Lesson plan <span class=\"badge badge-draft1\">✎ Very rough draft</span></span>"
+      "<span class='chapter-number'>21</span>  <span class='chapter-title'>Lesson plan <span class=\"badge badge-draft1\">✎ Very rough draft</span></span>"
     ]
   },
   {
     "objectID": "license.html",
     "href": "license.html",
-    "title": "20  License and citation",
+    "title": "22  License and citation",
     "section": "",
     "text": "© Ian Hussey (2025)\nText and figures are licensed under a Creative Commons Attribution 4.0 (CC BY 4.0) license.\nCode is licensed under the MIT License.\nYou are free to copy, share, adapt, and reuse the contents of this book — text, figures, and code — for any purpose, including commercial use, provided you cite it.\nCitation:\nHussey, I. & Cummins, J. (2025) Improving your statistical inferences using Monte Carlo simulation studies in tidyverse. github.com/ianhussey/improving-your-statistical-inferences-through-monte-carlo-simulation-studies",
     "crumbs": [
       "Appendices",
-      "<span class='chapter-number'>20</span>  <span class='chapter-title'>License and citation</span>"
+      "<span class='chapter-number'>22</span>  <span class='chapter-title'>License and citation</span>"
     ]
   }
 ]
