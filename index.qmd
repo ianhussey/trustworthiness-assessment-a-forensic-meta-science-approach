@@ -23,9 +23,9 @@ You can also copy and paste the code for any chapter directly from the website. 
 
 There are many excellent Open Source resources to learn simulation studies in R and {tidyverse}. Readers are encouraged to seek them out to support the materials already provided in this book. I can particularly recommend the following ones:
 
--   [Forensic Meta-Science: A hub for open-source forensic meta-science methods for assessing the trustworthiness of scientific research. Discover available guides and tools, or contribute to development.](https://trustworthy.scientific.claims/) 
+-   [trustworthy.scientific.claims: A hub for open-source forensic meta-science methods for assessing the trustworthiness of scientific research. Discover available guides and tools, or contribute to development.](https://trustworthy.scientific.claims/) 
 -   Heathers, J. (2025) An Introduction To Forensic Metascience [eBook](https://jamesheathers.curve.space/)
 
 ## Contributing
 
-If you are interested in contributing to or adapting this eBook, all code and data are available on [GitHub](https://github.com/ianhussey/trustworthiness-assessment-a-forensic-meta-science-approach).
+If you are interested in contributing to or adapting this eBook, all code and data are available on [GitHub](https://github.com/ianhussey/trustworthiness-assessment-and-forensic-meta-science).
