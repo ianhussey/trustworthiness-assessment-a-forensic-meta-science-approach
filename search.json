@@ -98,7 +98,7 @@
     "href": "chapters/psychological_preparation.html#be-willing-to-look",
     "title": "2  Psychological preparation ✎ Very rough draft",
     "section": "",
-    "text": "“A few outsiders and weirdos saw the giant lie at the heart of the economy by doing something the others never thought to do: They looked.”\nBe willing to consider that fraud-like behavior occurs",
+    "text": "“A few outsiders and weirdos saw the giant lie at the heart of the economy by doing something the others never thought to do: They looked.”",
     "crumbs": [
       "Part I: Concepts",
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Psychological preparation <span class=\"badge badge-draft1\">✎ Very rough draft</span></span>"
@@ -116,22 +116,11 @@
     ]
   },
   {
-    "objectID": "chapters/psychological_preparation.html#not-rewarding-incoherence",
-    "href": "chapters/psychological_preparation.html#not-rewarding-incoherence",
-    "title": "2  Psychological preparation ✎ Very rough draft",
-    "section": "2.3 Not rewarding incoherence",
-    "text": "2.3 Not rewarding incoherence\n\nNot rewarding motte and baileys / evaluating articles based on their strongest claims\nAuthors should not be rewarded for publishing a paper saying “1+1=3” as long as they have a footnote saying “jk lmao”; the footnote doesn’t insulate you from critique, especially if it’s being cited for the claim and not the footnote",
-    "crumbs": [
-      "Part I: Concepts",
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Psychological preparation <span class=\"badge badge-draft1\">✎ Very rough draft</span></span>"
-    ]
-  },
-  {
     "objectID": "chapters/psychological_preparation.html#think-stupider",
     "href": "chapters/psychological_preparation.html#think-stupider",
     "title": "2  Psychological preparation ✎ Very rough draft",
-    "section": "2.4 Think stupider",
-    "text": "2.4 Think stupider\n\nSometimes the simplest explanation is the right one",
+    "section": "2.3 Think stupider",
+    "text": "2.3 Think stupider\n\nSometimes the simplest explanation is the right one",
     "crumbs": [
       "Part I: Concepts",
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Psychological preparation <span class=\"badge badge-draft1\">✎ Very rough draft</span></span>"
@@ -141,8 +130,8 @@
     "objectID": "chapters/psychological_preparation.html#repeated-and-overlooked-information",
     "href": "chapters/psychological_preparation.html#repeated-and-overlooked-information",
     "title": "2  Psychological preparation ✎ Very rough draft",
-    "section": "2.5 Repeated and overlooked information",
-    "text": "2.5 Repeated and overlooked information\n\nTrustworthiness assessment relies on information that is repeated or overlooked",
+    "section": "2.4 Repeated and overlooked information",
+    "text": "2.4 Repeated and overlooked information\n\nTrustworthiness assessment relies on information that is repeated or overlooked",
     "crumbs": [
       "Part I: Concepts",
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Psychological preparation <span class=\"badge badge-draft1\">✎ Very rough draft</span></span>"
@@ -152,8 +141,8 @@
     "objectID": "chapters/psychological_preparation.html#boring-complicated-and-consequential",
     "href": "chapters/psychological_preparation.html#boring-complicated-and-consequential",
     "title": "2  Psychological preparation ✎ Very rough draft",
-    "section": "2.6 Boring, complicated, and consequential",
-    "text": "2.6 Boring, complicated, and consequential\n\nThe worst trustworthiness issues occur at the intersection of what is boring, complicated, and consequential",
+    "section": "2.5 Boring, complicated, and consequential",
+    "text": "2.5 Boring, complicated, and consequential\n\nThe worst trustworthiness issues occur at the intersection of what is boring, complicated, and consequential",
     "crumbs": [
       "Part I: Concepts",
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Psychological preparation <span class=\"badge badge-draft1\">✎ Very rough draft</span></span>"
@@ -163,8 +152,8 @@
     "objectID": "chapters/psychological_preparation.html#is-it-just-me",
     "href": "chapters/psychological_preparation.html#is-it-just-me",
     "title": "2  Psychological preparation ✎ Very rough draft",
-    "section": "2.7 Is it just me?",
-    "text": "2.7 Is it just me?\n\nDealing with uncertainty about whether an issue is real",
+    "section": "2.6 Is it just me?",
+    "text": "2.6 Is it just me?\n\nDealing with uncertainty about whether an issue is real",
     "crumbs": [
       "Part I: Concepts",
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Psychological preparation <span class=\"badge badge-draft1\">✎ Very rough draft</span></span>"
@@ -174,30 +163,41 @@
     "objectID": "chapters/psychological_preparation.html#avoiding-playing-detective",
     "href": "chapters/psychological_preparation.html#avoiding-playing-detective",
     "title": "2  Psychological preparation ✎ Very rough draft",
-    "section": "2.8 Avoiding playing detective",
-    "text": "2.8 Avoiding playing detective\n\nThe burden of proof is on the original authors to substantiate their claims; trustworthiness assessment only has to explain the issue, not account for it\nYou don’t have to unfuck it",
+    "section": "2.7 Avoiding playing detective",
+    "text": "2.7 Avoiding playing detective\n\nThe burden of proof is on the original authors to substantiate their claims; trustworthiness assessment only has to quantify if there are issues in published work, not fully speculate or account for how they might have arisen. Speculation about intent is often actively unhelpful.",
     "crumbs": [
       "Part I: Concepts",
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Psychological preparation <span class=\"badge badge-draft1\">✎ Very rough draft</span></span>"
     ]
   },
   {
-    "objectID": "chapters/psychological_preparation.html#who-cares-about-intent",
-    "href": "chapters/psychological_preparation.html#who-cares-about-intent",
+    "objectID": "chapters/psychological_preparation.html#highlighting-issues-does-not-require-solving-them",
+    "href": "chapters/psychological_preparation.html#highlighting-issues-does-not-require-solving-them",
     "title": "2  Psychological preparation ✎ Very rough draft",
-    "section": "2.9 Who cares about intent",
-    "text": "2.9 Who cares about intent\n\nNegligence &lt; recklessness &lt; intent\nThat’s not useful but it’s also usually not your role. Trustworthiness assessment of research is a separate (although sometimes prior-) step from research integrity assessments done e.g., by universities that determine guilt etc.\nTrustworthiness assessment is analogous to forensic accounting or forensic lab work; not the courts that then determine whether fraud occurred or not",
+    "section": "2.8 Highlighting issues does not require solving them",
+    "text": "2.8 Highlighting issues does not require solving them\n\nblog post on this",
     "crumbs": [
       "Part I: Concepts",
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Psychological preparation <span class=\"badge badge-draft1\">✎ Very rough draft</span></span>"
     ]
   },
   {
-    "objectID": "chapters/psychological_preparation.html#untrustworthiness-as-an-individual-differences-factor",
-    "href": "chapters/psychological_preparation.html#untrustworthiness-as-an-individual-differences-factor",
+    "objectID": "chapters/psychological_preparation.html#post-publication-scrutiny-should-focus-on-what-matters",
+    "href": "chapters/psychological_preparation.html#post-publication-scrutiny-should-focus-on-what-matters",
     "title": "2  Psychological preparation ✎ Very rough draft",
-    "section": "2.10 Untrustworthiness as an individual differences factor",
-    "text": "2.10 Untrustworthiness as an individual differences factor\n\nEmphasis on avoiding witch hunts risks ignoring sensible implications of seeing untrustworthy research as a human factors problem that are nested in individuals, research groups, practices, etc.\nSystematic patterns matter",
+    "section": "2.9 Post-publication scrutiny should focus on what matters",
+    "text": "2.9 Post-publication scrutiny should focus on what matters\n\nblog post on this",
+    "crumbs": [
+      "Part I: Concepts",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Psychological preparation <span class=\"badge badge-draft1\">✎ Very rough draft</span></span>"
+    ]
+  },
+  {
+    "objectID": "chapters/psychological_preparation.html#not-rewarding-incoherence",
+    "href": "chapters/psychological_preparation.html#not-rewarding-incoherence",
+    "title": "2  Psychological preparation ✎ Very rough draft",
+    "section": "2.10 Not rewarding incoherence",
+    "text": "2.10 Not rewarding incoherence\n\nNot rewarding motte and baileys / evaluating articles based on their strongest claims\nAuthors should not be rewarded for publishing a paper saying “1+1=3” as long as they have a footnote saying “jk lmao”; the footnote doesn’t insulate you from critique, especially if it’s being cited for the claim and not the footnote",
     "crumbs": [
       "Part I: Concepts",
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Psychological preparation <span class=\"badge badge-draft1\">✎ Very rough draft</span></span>"
